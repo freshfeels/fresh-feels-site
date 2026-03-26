@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!-- saved from url=(0136)file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Ad Audit — Lucent Globe</title>
+    <script src="./Meta Ad Audit — Lucent Globe_files/saved_resource"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 50:'#f0f9ff', 100:'#e0f2fe', 200:'#bae6fd', 500:'#0ea5e9', 600:'#0284c7', 700:'#0369a1', 900:'#0c4a6e' },
+                        accent: { 50:'#fdf4ff', 100:'#fae8ff', 500:'#a855f7', 600:'#9333ea', 700:'#7e22ce' },
+                        success: { 50:'#f0fdf4', 100:'#dcfce7', 600:'#16a34a', 700:'#15803d' },
+                        warn: { 50:'#fffbeb', 100:'#fef9c3', 600:'#ca8a04', 700:'#a16207' },
+                        danger: { 50:'#fff1f2', 100:'#ffe4e6', 600:'#e11d48', 700:'#be123c' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap');
+        * { font-family: 'Inter', sans-serif; }
+        .nav-link { transition: all 0.15s ease; border-left: 2px solid transparent; }
+        .nav-link:hover { background: #f0f9ff; color: #0284c7; border-left-color: #bae6fd; }
+        .nav-link.active { background: #e0f2fe; color: #0284c7; border-left-color: #0284c7; font-weight: 500; }
+        .badge-evergreen { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+        .badge-strong    { background: #fef9c3; color: #a16207; border: 1px solid #fde68a; }
+        .badge-recent    { background: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
+        .badge-pill      { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 99px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; }
+        .stat-card { position: relative; overflow: hidden; }
+        .stat-card::before { content:''; position:absolute; top:-20px; right:-20px; width:80px; height:80px; border-radius:50%; opacity:0.08; }
+        .stat-card.blue::before  { background: #0284c7; }
+        .stat-card.purple::before{ background: #9333ea; }
+        .stat-card.green::before { background: #16a34a; }
+        .stat-card.amber::before { background: #ca8a04; }
+        .bar-track { background: #f1f5f9; border-radius: 99px; overflow: hidden; height: 8px; }
+        .bar-fill  { height: 100%; border-radius: 99px; transition: width 0.6s ease; }
+        .ad-card { border-left: 3px solid #0284c7; }
+        .ad-card.evergreen { border-left-color: #16a34a; }
+        .ad-card.strong    { border-left-color: #ca8a04; }
+        .ad-card.recent    { border-left-color: #94a3b8; }
+        .callout-steal { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #bae6fd; }
+        .callout-gap   { background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%); border: 1px solid #e9d5ff; }
+        .callout-warn  { background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 1px solid #fde68a; }
+        .sortable th { cursor: pointer; user-select: none; white-space: nowrap; }
+        .sortable th:hover { background: #f8fafc; }
+        .sort-arrow::after { content:' ↕'; opacity:0.3; font-size:0.75em; }
+        .sort-asc::after   { content:' ↑'; opacity:1; font-size:0.75em; }
+        .sort-desc::after  { content:' ↓'; opacity:1; font-size:0.75em; }
+        .fade-in { animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+        .section-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #94a3b8; margin-bottom: 0.75rem; }
+        .hook-chip { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 99px; font-size: 0.75rem; font-weight: 500; background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+        #sidebar::-webkit-scrollbar { width: 4px; }
+        #sidebar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 99px; }
+        @media print { #sidebar, .no-print { display: none !important; } main { margin-left: 0 !important; } }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.sticky{position:sticky}.left-0{left:0px}.top-0{top:0px}.z-40{z-index:40}.z-50{z-index:50}.mb-0\.5{margin-bottom:0.125rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-8{margin-left:2rem}.mt-0\.5{margin-top:0.125rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.mb-1\.5{margin-bottom:0.375rem}.mt-1{margin-top:0.25rem}.mt-1\.5{margin-top:0.375rem}.mt-4{margin-top:1rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-full{height:100%}.h-1\.5{height:0.375rem}.h-2{height:0.5rem}.h-8{height:2rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-60{width:15rem}.w-7{width:1.75rem}.w-1\.5{width:0.375rem}.w-2{width:0.5rem}.w-8{width:2rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-xs{max-width:20rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-x-8{column-gap:2rem}.gap-y-2{row-gap:0.5rem}.space-y-12 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-brand-100{--tw-border-opacity:1;border-color:rgb(224 242 254 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-50{--tw-border-opacity:1;border-color:rgb(248 250 252 / var(--tw-border-opacity, 1))}.bg-brand-100{--tw-bg-opacity:1;background-color:rgb(224 242 254 / var(--tw-bg-opacity, 1))}.bg-brand-600{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-accent-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-brand-50{--tw-bg-opacity:1;background-color:rgb(240 249 255 / var(--tw-bg-opacity, 1))}.bg-brand-500{--tw-bg-opacity:1;background-color:rgb(14 165 233 / var(--tw-bg-opacity, 1))}.bg-danger-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-slate-300{--tw-bg-opacity:1;background-color:rgb(203 213 225 / var(--tw-bg-opacity, 1))}.bg-slate-400{--tw-bg-opacity:1;background-color:rgb(148 163 184 / var(--tw-bg-opacity, 1))}.bg-success-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-warn-600{--tw-bg-opacity:1;background-color:rgb(202 138 4 / var(--tw-bg-opacity, 1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-brand-900{--tw-gradient-from:#0c4a6e var(--tw-gradient-from-position);--tw-gradient-to:rgb(12 74 110 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-800{--tw-gradient-from:#1e293b var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 41 59 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-brand-700{--tw-gradient-to:rgb(3 105 161 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0369a1 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-accent-700{--tw-gradient-to:#7e22ce var(--tw-gradient-to-position)}.to-slate-900{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.text-accent-500{--tw-text-opacity:1;color:rgb(168 85 247 / var(--tw-text-opacity, 1))}.text-accent-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-accent-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.text-brand-200{--tw-text-opacity:1;color:rgb(186 230 253 / var(--tw-text-opacity, 1))}.text-brand-500{--tw-text-opacity:1;color:rgb(14 165 233 / var(--tw-text-opacity, 1))}.text-brand-600{--tw-text-opacity:1;color:rgb(2 132 199 / var(--tw-text-opacity, 1))}.text-brand-700{--tw-text-opacity:1;color:rgb(3 105 161 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-success-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-warn-600{--tw-text-opacity:1;color:rgb(202 138 4 / var(--tw-text-opacity, 1))}.text-warn-700{--tw-text-opacity:1;color:rgb(161 98 7 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-brand-50:hover{--tw-bg-opacity:1;background-color:rgb(240 249 255 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}@media (min-width: 640px){.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:px-10{padding-left:2.5rem;padding-right:2.5rem}.sm\:py-14{padding-top:3.5rem;padding-bottom:3.5rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}}@media (min-width: 1024px){.lg\:ml-60{margin-left:15rem}.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:flex-col{flex-direction:column}}</style></head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+<!-- SIDEBAR -->
+<nav id="sidebar" class="no-print fixed left-0 top-0 h-full w-60 bg-white border-r border-slate-100 overflow-y-auto z-50 hidden lg:flex lg:flex-col">
+    <div class="p-5 border-b border-slate-100">
+        <div class="flex items-center gap-2 mb-0.5">
+            <div class="w-6 h-6 rounded-md bg-brand-600 flex items-center justify-center">
+                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            </div>
+            <span class="font-semibold text-slate-800 text-sm">Meta Ad Audit</span>
+        </div>
+        <p class="text-xs text-slate-400 ml-8">Lucent Globe · 25 Mar 2026</p>
+    </div>
+    <div class="flex-1 py-4 px-2">
+        <p class="section-label px-3 mb-2">Navigation</p>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#snapshot" class="nav-link flex items-center gap-2 px-3 py-2 text-sm rounded-lg mb-0.5 active"><svg class="w-4 h-4 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>Snapshot</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#top-ads" class="nav-link flex items-center gap-2 px-3 py-2 text-sm rounded-lg mb-0.5"><svg class="w-4 h-4 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>Top Performing Ads</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#creative" class="nav-link flex items-center gap-2 px-3 py-2 text-sm rounded-lg mb-0.5"><svg class="w-4 h-4 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>Creative Analysis</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#copy" class="nav-link flex items-center gap-2 px-3 py-2 text-sm rounded-lg mb-0.5"><svg class="w-4 h-4 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>Copy &amp; Hooks</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#strategy" class="nav-link flex items-center gap-2 px-3 py-2 text-sm rounded-lg mb-0.5"><svg class="w-4 h-4 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>Strategy &amp; A/B Tests</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#recommendations" class="nav-link flex items-center gap-2 px-3 py-2 text-sm rounded-lg mb-0.5"><svg class="w-4 h-4 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>Recommendations</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#raw-data" class="nav-link flex items-center gap-2 px-3 py-2 text-sm rounded-lg mb-0.5"><svg class="w-4 h-4 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>Raw Data</a>
+    </div>
+    <div class="p-4 border-t border-slate-100">
+        <p class="text-xs text-slate-400 leading-relaxed">Data from Meta Ad Library. Longevity signals are directional.</p>
+    </div>
+</nav>
+
+<!-- MOBILE HEADER -->
+<header class="lg:hidden no-print sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-100 px-4 py-3">
+    <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            </div>
+            <div><p class="font-semibold text-sm text-slate-800">Lucent Globe</p><p class="text-xs text-slate-400">Meta Ad Audit</p></div>
+        </div>
+        <button onclick="document.getElementById(&#39;mobile-nav&#39;).classList.toggle(&#39;hidden&#39;)" class="p-2 rounded-lg hover:bg-slate-100 text-slate-500">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+    </div>
+    <div id="mobile-nav" class="hidden mt-3 grid grid-cols-2 gap-1">
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#snapshot" class="text-xs px-3 py-2 rounded-lg bg-slate-50 hover:bg-brand-50 text-slate-600">⚡ Snapshot</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#top-ads" class="text-xs px-3 py-2 rounded-lg bg-slate-50 hover:bg-brand-50 text-slate-600">⭐ Top Ads</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#creative" class="text-xs px-3 py-2 rounded-lg bg-slate-50 hover:bg-brand-50 text-slate-600">🎨 Creative</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#copy" class="text-xs px-3 py-2 rounded-lg bg-slate-50 hover:bg-brand-50 text-slate-600">✍️ Copy</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#strategy" class="text-xs px-3 py-2 rounded-lg bg-slate-50 hover:bg-brand-50 text-slate-600">🧠 Strategy</a>
+        <a href="file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Competitor%20Meta%20Ad%20Audits/lucent-globe/lucent-globe-2026-03-25.html#recommendations" class="text-xs px-3 py-2 rounded-lg bg-slate-50 hover:bg-brand-50 text-slate-600">✅ Actions</a>
+    </div>
+</header>
+
+<!-- MAIN -->
+<main class="lg:ml-60">
+
+    <!-- HERO -->
+    <div class="bg-gradient-to-br from-brand-900 via-brand-700 to-accent-700 text-white px-6 sm:px-10 py-10 sm:py-14">
+        <div class="max-w-4xl">
+            <p class="section-label text-brand-200 mb-3">Meta Ad Library Audit</p>
+            <h1 class="text-3xl sm:text-4xl font-bold mb-2 tracking-tight">Lucent Globe</h1>
+            <p class="text-brand-200 text-sm">23 active ad clusters analysed · Australia · 25 March 2026</p>
+            <div class="mt-6 flex flex-wrap gap-2">
+                <span class="badge-pill badge-evergreen">11 Evergreen</span>
+                <span class="badge-pill badge-strong">6 Strong</span>
+                <span class="badge-pill badge-recent">6 Recent</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-6 sm:px-10 py-8 max-w-4xl space-y-12">
+
+        <!-- SNAPSHOT -->
+        <section id="snapshot" class="fade-in">
+            <p class="section-label">Quick Snapshot</p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                <div class="stat-card blue bg-white rounded-xl border border-slate-100 shadow-sm p-4">
+                    <p class="text-2xl font-bold text-brand-600">23</p>
+                    <p class="text-xs font-medium text-slate-500 mt-0.5">Ad Clusters</p>
+                </div>
+                <div class="stat-card green bg-white rounded-xl border border-slate-100 shadow-sm p-4">
+                    <p class="text-2xl font-bold text-success-600">11</p>
+                    <p class="text-xs font-medium text-slate-500 mt-0.5">Evergreen (90+ days)</p>
+                </div>
+                <div class="stat-card purple bg-white rounded-xl border border-slate-100 shadow-sm p-4">
+                    <p class="text-2xl font-bold text-accent-600">Video</p>
+                    <p class="text-xs font-medium text-slate-500 mt-0.5">100% Format</p>
+                </div>
+                <div class="stat-card amber bg-white rounded-xl border border-slate-100 shadow-sm p-4">
+                    <p class="text-2xl font-bold text-warn-600">PAS</p>
+                    <p class="text-xs font-medium text-slate-500 mt-0.5">Dominant Hook Framework</p>
+                </div>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                <div class="callout-steal rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3"><span class="text-lg">✅</span><p class="font-semibold text-brand-700 text-sm">What's Working</p></div>
+                    <ul class="space-y-2 text-sm text-slate-700">
+                        <li class="flex gap-2"><span class="text-brand-500 mt-0.5 flex-shrink-0">→</span>Problem-Agitate-Solve (PAS) video ads with ❌ bullet lists attacking conventional detergent — this format appears in every evergreen ad and spans 200+ days</li>
+                        <li class="flex gap-2"><span class="text-brand-500 mt-0.5 flex-shrink-0">→</span>Founder-led "confession" and "apology" hooks via their "Brodie and Roger" page — the two longest-running ads both use a personal narrative opener</li>
+                        <li class="flex gap-2"><span class="text-brand-500 mt-0.5 flex-shrink-0">→</span>Bundle and free-gift offers consistently outperform single-product ads in longevity — Everything Bundle, Clean Home Starter Kit, Scent Bundle all have 90+ day runs</li>
+                        <li class="flex gap-2"><span class="text-brand-500 mt-0.5 flex-shrink-0">→</span>External influencer video (The Bargain Hacker, Jess Swann) running 240+ days — UGC-style third-party endorsement is clearly proven in their library</li>
+                    </ul>
+                </div>
+                <div class="callout-warn rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3"><span class="text-lg">⚠️</span><p class="font-semibold text-warn-700 text-sm">What's Not</p></div>
+                    <ul class="space-y-2 text-sm text-slate-700">
+                        <li class="flex gap-2"><span class="text-warn-500 mt-0.5 flex-shrink-0">→</span>Flash sale / urgency-only ads ("$15 Detergent Sheets 24 Hour Flash Sale") appear to have shorter cycles — they're not scaling into evergreen territory</li>
+                        <li class="flex gap-2"><span class="text-warn-500 mt-0.5 flex-shrink-0">→</span>Brand/credentials content ("B Corp Certified", "Inspired by Chanel") is recent and unproven — no longevity signal yet on either angle</li>
+                        <li class="flex gap-2"><span class="text-warn-500 mt-0.5 flex-shrink-0">→</span>Dishwashing category ads are newer and shorter-lived vs laundry — they're still finding their proven hook for that product line</li>
+                    </ul>
+                </div>
+                <div class="callout-gap rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-3"><span class="text-lg">💡</span><p class="font-semibold text-accent-700 text-sm">Opportunities</p></div>
+                    <ul class="space-y-2 text-sm text-slate-700">
+                        <li class="flex gap-2"><span class="text-accent-500 mt-0.5 flex-shrink-0">→</span>Zero comparison or switch-story content — "I switched from X to Lucent Globe" head-to-head format is completely absent, despite the brand being built on contrast messaging</li>
+                        <li class="flex gap-2"><span class="text-accent-500 mt-0.5 flex-shrink-0">→</span>No subscription or repeat-purchase-focused ads — their everything bundle routes include a subscription plan but no ad explicitly leads with the subscribe-and-save angle</li>
+                        <li class="flex gap-2"><span class="text-accent-500 mt-0.5 flex-shrink-0">→</span>No in-use / results demonstration content — every ad attacks the problem, but none visually shows before/after laundry results or product in action in a structured way</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6 mb-6">
+                <p class="font-semibold text-slate-800 mb-4 flex items-center gap-2">
+                    <svg class="w-4 h-4 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    Key Takeaways
+                </p>
+                <ol class="space-y-3">
+                    <li class="flex gap-3 text-sm text-slate-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-brand-100 text-brand-700 font-bold text-xs flex items-center justify-center">1</span>
+                        <span>Their entire paid strategy rests on one framework: list what's wrong with conventional detergent (toxic, plastic, expensive, watered-down), then position Lucent Globe as the obvious upgrade. This PAS structure appears in at least 8 of their 11 evergreen ads.</span>
+                    </li>
+                    <li class="flex gap-3 text-sm text-slate-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-brand-100 text-brand-700 font-bold text-xs flex items-center justify-center">2</span>
+                        <span>They run ads from three distinct identities: the "Lucent Globe" brand page, the founder "Brodie and Roger" page, and external influencers. The founder ads are their single longest-running performers — personal narrative from a named founder is beating brand creative.</span>
+                    </li>
+                    <li class="flex gap-3 text-sm text-slate-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-brand-100 text-brand-700 font-bold text-xs flex items-center justify-center">3</span>
+                        <span>Lucent Globe heavily relies on discount and urgency mechanics — free gifts, flash sales, 50% off bundles, birthday sales. Unlike Frank Body, they are not building brand equity in paid media; they are buying conversion with offer-led messaging. This creates margin pressure risk.</span>
+                    </li>
+                    <li class="flex gap-3 text-sm text-slate-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-brand-100 text-brand-700 font-bold text-xs flex items-center justify-center">4</span>
+                        <span>They are actively expanding into dishwashing sheets (launched early 2026) with 5 new ad clusters. This category expansion is early-stage — the hook formulas that work for laundry (toxic chemicals, plastic) are being directly ported to dishwashing, which shows a playbook, not a product-specific strategy.</span>
+                    </li>
+                    <li class="flex gap-3 text-sm text-slate-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-brand-100 text-brand-700 font-bold text-xs flex items-center justify-center">5</span>
+                        <span>The "Inspired by Chanel. Made for Laundry." luxury angle (7-ad cluster, Jan 29 launch) is the biggest strategic bet in their current library — 7 variants suggests high investment. It's only 55 days old. If it scales, it signals a brand positioning pivot toward premium/aspiration. Worth watching closely.</span>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Steal This Now -->
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-xl p-6 text-white">
+                <p class="font-semibold mb-3 flex items-center gap-2 text-sm">
+                    <span class="text-lg">🎯</span>
+                    Steal This Now
+                </p>
+                <p class="text-xs text-slate-400 mb-4">3 things you could brief a creative team on today, drawn from Lucent Globe's provably working patterns.</p>
+                <ol class="space-y-3">
+                    <li class="flex gap-3 text-sm text-slate-300">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-slate-700 text-slate-300 font-bold text-xs flex items-center justify-center">1</span>
+                        <span>Use the ❌ problem list framework: open with "Most [category products]..." followed by 3-4 ❌ bullet points naming the category's worst problems (chemicals, plastic, cost, inefficiency). Then pivot to your solution. This is Lucent Globe's most-proven formula — it appears across 8 evergreen ads spanning 9+ months.</span>
+                    </li>
+                    <li class="flex gap-3 text-sm text-slate-300">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-slate-700 text-slate-300 font-bold text-xs flex items-center justify-center">2</span>
+                        <span>Film a founder "confession" or "I was wrong" video. Lucent Globe's two longest-running ads (290 and 198 days) both open with personal accountability — "I LIED", "I have a confession", "WORST 1-star review". The vulnerability hook disarms ad-blindness in a way branded content cannot replicate.</span>
+                    </li>
+                    <li class="flex gap-3 text-sm text-slate-300">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-slate-700 text-slate-300 font-bold text-xs flex items-center justify-center">3</span>
+                        <span>Structure your bundle offer with a specific free-gift dollar value: "Get $93.97 worth of FREE GIFTS" has been running for 281 days. The specificity of the dollar amount (not round, not vague) makes the offer feel calculated and real rather than promotional. Precision = credibility.</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- TOP PERFORMING ADS -->
+        <section id="top-ads" class="fade-in">
+            <p class="section-label">Top Performing Ads</p>
+            <h2 class="text-xl font-bold text-slate-800 mb-1">Evergreen &amp; Long-Running Ads</h2>
+            <p class="text-sm text-slate-500 mb-6">Ranked by days active — the strongest public signal of what's converting.</p>
+
+            <div class="space-y-4">
+
+                <div class="ad-card evergreen bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="badge-pill badge-evergreen">Evergreen</span>
+                            <span class="hook-chip">Video</span>
+                            <span class="hook-chip">Founder Page</span>
+                            <span class="hook-chip">Shop Now</span>
+                        </div>
+                        <div class="text-right flex-shrink-0">
+                            <p class="text-2xl font-bold text-success-600">290</p>
+                            <p class="text-xs text-slate-400">days active</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="section-label mb-1">Ad Copy (Opening)</p>
+                        <blockquote class="text-sm text-slate-700 bg-slate-50 rounded-lg p-3 border-l-2 border-brand-300 italic leading-relaxed">
+                            "I have a confession... I LIED. I didn't think we could make our detergent sheets any cheaper, but we did."
+                        </blockquote>
+                    </div>
+                    <div class="mb-3 text-xs text-slate-500">Landing page: Everything Bundle v2 · Brodie and Roger - Lucent Globe page</div>
+                    <div class="bg-brand-50 rounded-lg p-4 border border-brand-100">
+                        <p class="text-xs font-semibold text-brand-700 mb-1.5 flex items-center gap-1">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            Why It Works
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">The word "confession" creates an immediate pattern interrupt — it signals that something unusual is about to happen, which delays the scroll. "I LIED" then forces re-engagement because it contradicts the expected brand behaviour of self-promotion. The pivot ("but we did it anyway") reframes the founder as a relentless advocate for the customer, not the business. Running from the founder page rather than the brand page adds a layer of perceived authenticity that branded content can't replicate.</p>
+                    </div>
+                </div>
+
+                <div class="ad-card evergreen bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="badge-pill badge-evergreen">Evergreen</span>
+                            <span class="hook-chip">Video / Image</span>
+                            <span class="hook-chip">Shop Now</span>
+                        </div>
+                        <div class="text-right flex-shrink-0">
+                            <p class="text-2xl font-bold text-success-600">281</p>
+                            <p class="text-xs text-slate-400">days active</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="section-label mb-1">Ad Copy (Opening)</p>
+                        <blockquote class="text-sm text-slate-700 bg-slate-50 rounded-lg p-3 border-l-2 border-brand-300 italic leading-relaxed">
+                            "Get $93.97 worth of FREE GIFTS with our Clean Home Starter Kit. The offer ends SOON! This is our best value bundle yet."
+                        </blockquote>
+                    </div>
+                    <div class="mb-3 text-xs text-slate-500">Landing page: Clean Home Starter Kit bundle page · Lucent Globe main page</div>
+                    <div class="bg-brand-50 rounded-lg p-4 border border-brand-100">
+                        <p class="text-xs font-semibold text-brand-700 mb-1.5 flex items-center gap-1">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            Why It Works
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">The specificity of "$93.97" — an odd, non-round number — signals that the value has been carefully calculated, not inflated, which makes the free gift feel real rather than promotional. Leading with the gift before naming the product forces the reader to evaluate value before price, anchoring their perception high. The urgency ("offer ends SOON") is soft enough to avoid feeling cheap, while still creating forward pressure on the decision.</p>
+                    </div>
+                </div>
+
+                <div class="ad-card evergreen bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="badge-pill badge-evergreen">Evergreen</span>
+                            <span class="hook-chip">Video</span>
+                            <span class="hook-chip">Influencer Collab</span>
+                            <span class="hook-chip">Shop Now</span>
+                        </div>
+                        <div class="text-right flex-shrink-0">
+                            <p class="text-2xl font-bold text-success-600">240</p>
+                            <p class="text-xs text-slate-400">days active</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="section-label mb-1">Ad Copy (Opening)</p>
+                        <blockquote class="text-sm text-slate-700 bg-slate-50 rounded-lg p-3 border-l-2 border-brand-300 italic leading-relaxed">
+                            "I'm so excited to announce that @lucentglobe has just launched 4 new gorgeous laundry detergent sheet scents…" — The Bargain Hacker
+                        </blockquote>
+                    </div>
+                    <div class="mb-3 text-xs text-slate-500">Landing page: Limited Edition Laundry Scent Bundle · The Bargain Hacker x Lucent Globe</div>
+                    <div class="bg-brand-50 rounded-lg p-4 border border-brand-100">
+                        <p class="text-xs font-semibold text-brand-700 mb-1.5 flex items-center gap-1">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            Why It Works
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">An influencer announcement ad framed as organic excitement — "I'm so excited" removes the ad-frame and replaces it with a friend telling you about a discovery. The influencer's handle ("The Bargain Hacker") signals this is relevant to value-conscious shoppers, pre-qualifying the audience. The specific "4 new scents" detail creates novelty and specificity that pure brand content rarely achieves. 240 days is exceptional longevity for an influencer collab — this is a proven format worth repeating.</p>
+                    </div>
+                </div>
+
+                <div class="ad-card evergreen bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="badge-pill badge-evergreen">Evergreen</span>
+                            <span class="hook-chip">Video</span>
+                            <span class="hook-chip">Shop Now</span>
+                        </div>
+                        <div class="text-right flex-shrink-0">
+                            <p class="text-2xl font-bold text-success-600">201</p>
+                            <p class="text-xs text-slate-400">days active</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="section-label mb-1">Ad Copy (Opening)</p>
+                        <blockquote class="text-sm text-slate-700 bg-slate-50 rounded-lg p-3 border-l-2 border-brand-300 italic leading-relaxed">
+                            "You'll be SHOCKED to learn what's actually in your dishwashing detergent… Not over here 👋 We're giving away 50% OFF the EVERYTHING BUNDLE."
+                        </blockquote>
+                    </div>
+                    <div class="mb-3 text-xs text-slate-500">Landing page: Detergent Sheet Bundle (50% off) · Lucent Globe main page</div>
+                    <div class="bg-brand-50 rounded-lg p-4 border border-brand-100">
+                        <p class="text-xs font-semibold text-brand-700 mb-1.5 flex items-center gap-1">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            Why It Works
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">"SHOCKED" is a curiosity trigger that promises a revelation — it creates an information gap the viewer needs to close before scrolling. The pivot "Not over here 👋" is a smooth brand-to-offer bridge that converts anxiety (what's in my detergent?) into relief (but we're clean). The 50% discount is then positioned as a reward for switching rather than a desperate promotion, which maintains perceived value while still driving conversion urgency.</p>
+                    </div>
+                </div>
+
+                <div class="ad-card evergreen bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="badge-pill badge-evergreen">Evergreen</span>
+                            <span class="hook-chip">Video</span>
+                            <span class="hook-chip">Founder Page</span>
+                            <span class="hook-chip">Shop Now</span>
+                        </div>
+                        <div class="text-right flex-shrink-0">
+                            <p class="text-2xl font-bold text-success-600">198</p>
+                            <p class="text-xs text-slate-400">days active</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <p class="section-label mb-1">Ad Copy (Opening)</p>
+                        <blockquote class="text-sm text-slate-700 bg-slate-50 rounded-lg p-3 border-l-2 border-brand-300 italic leading-relaxed">
+                            "We just got the WORST 1-star review… Even after winning Product Review's 2025 Laundry Detergent of the Year."
+                        </blockquote>
+                    </div>
+                    <div class="mb-3 text-xs text-slate-500">Landing page: Everything Bundle v2 (with subscription plan) · Brodie and Roger - Lucent Globe page</div>
+                    <div class="bg-brand-50 rounded-lg p-4 border border-brand-100">
+                        <p class="text-xs font-semibold text-brand-700 mb-1.5 flex items-center gap-1">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            Why It Works
+                        </p>
+                        <p class="text-sm text-slate-700 leading-relaxed">Opening with a negative review is a counterintuitive transparency move — it signals confidence that the brand can absorb criticism without deflecting. The immediate contrast ("Even after winning Product Review's 2025 Laundry Detergent of the Year") turns a weakness into a social proof device that the 1-star hook actually delivers. The destination — a subscription bundle — is strategically aligned: a viewer converted through a trust-based ad is exactly the right candidate for a repeat-purchase commitment.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CREATIVE ANALYSIS -->
+        <section id="creative" class="fade-in">
+            <p class="section-label">Creative Analysis</p>
+            <h2 class="text-xl font-bold text-slate-800 mb-6">Format &amp; Visual Strategy</h2>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <p class="font-semibold text-slate-700 text-sm mb-4">Format Distribution</p>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Video</span><span class="font-semibold">100%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-brand-500" style="width:100%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Static Image</span><span class="font-semibold">~5%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-slate-400" style="width:5%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Carousel</span><span class="font-semibold">0%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-accent-500" style="width:0%"></div></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-3">Virtually all ads are video. No carousel format detected across any cluster. This is a deliberate, single-format bet.</p>
+                </div>
+
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <p class="font-semibold text-slate-700 text-sm mb-4">Platform &amp; Placement</p>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Facebook Feed</span><span class="font-semibold">~95%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-brand-500" style="width:95%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Instagram Feed</span><span class="font-semibold">~90%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-accent-500" style="width:90%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Instagram Reels</span><span class="font-semibold">~70%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-success-600" style="width:70%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Stories</span><span class="font-semibold">~65%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-warn-600" style="width:65%"></div></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-3">Running across all major placements simultaneously. Each ad shows 5 platform icons — broad placement strategy across FB + IG + Reels + Stories.</p>
+                </div>
+
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6 sm:col-span-2">
+                    <p class="font-semibold text-slate-700 text-sm mb-4">Visual Style</p>
+                    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-600">
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Creative identity:</strong> Mixed — founder UGC (Brodie and Roger), brand-produced video, and external influencer UGC. No single consistent visual style.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Founder videos:</strong> Talking-head style, informal — shot from what appears to be an office or home setting. Low production, high trust signal.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Brand video style:</strong> Product demonstration mixed with text overlays showing the ❌ problem list. Direct-to-camera structure with on-screen captions for sound-off viewing.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Color palette:</strong> Clean whites, greens, and blues — eco/clean aesthetic consistent with brand positioning. Product packaging is visually prominent.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Headline pattern:</strong> "The FUTURE of Cleaning 🧼" and "the FUTURE of cleaning 🧼" appear as the ad headline across many placements — highly consistent brand statement.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Luxury outlier:</strong> "Inspired by Chanel" cluster breaks visual consistency — premium packaging, darker aesthetics. A clear test of a different creative direction.</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                <p class="font-semibold text-slate-700 text-sm mb-3">Observations</p>
+                <div class="space-y-2 text-sm text-slate-600">
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mt-1.5 flex-shrink-0"></span><span>Lucent Globe is one of the few brands in this category running 100% video — no carousels at all, which is unusual. This suggests either video is so clearly dominant in their testing that they've stopped experimenting with other formats, or they lack creative resource for carousel production.</span></div>
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mt-1.5 flex-shrink-0"></span><span>Three distinct creative identities (brand, founder, influencer) give them the ability to target different audience mindsets within the same paid stack — skeptical buyers may respond to founder transparency, while deal-hunters respond to brand offer ads and peers respond to influencer UGC.</span></div>
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mt-1.5 flex-shrink-0"></span><span>The "Inspired by Chanel" cluster (7 ad variants) is the most aggressively tested creative in their recent library. 7 variants in a single cluster suggests they are testing multiple combinations of hook, copy, and audience — a significant budget commitment to prove or disprove this positioning.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COPY & HOOKS -->
+        <section id="copy" class="fade-in">
+            <p class="section-label">Copy &amp; Hook Analysis</p>
+            <h2 class="text-xl font-bold text-slate-800 mb-6">Messaging Patterns</h2>
+            <div class="grid sm:grid-cols-2 gap-4 mb-4">
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <p class="font-semibold text-slate-700 text-sm mb-4">Hook Type Breakdown</p>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Problem/Agitation (PAS)</span><span class="font-semibold">52%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-brand-500" style="width:52%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Curiosity / Shock</span><span class="font-semibold">18%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-accent-500" style="width:18%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Offer / Savings Lead</span><span class="font-semibold">13%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-success-600" style="width:13%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Founder / Confession</span><span class="font-semibold">10%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-warn-600" style="width:10%"></div></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-600 mb-1"><span>Social Proof / Awards</span><span class="font-semibold">7%</span></div>
+                            <div class="bar-track"><div class="bar-fill bg-danger-600" style="width:7%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <p class="font-semibold text-slate-700 text-sm mb-4">Tone &amp; Voice</p>
+                    <div class="space-y-2 text-sm text-slate-600">
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Overall tone:</strong> Urgent, mission-driven, consumer-advocacy — they position themselves as fighting for the customer against a corrupt industry</span></div>
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Capitalisation:</strong> Aggressive ALL CAPS for key words — MASSIVE, SHOCKED, THOUSANDS, FREE, WORST. Loud and punchy.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Emoji usage:</strong> Heavy use of ❌, ✅, 🫱🏻‍🫲🏼, 💰, ☣️ as visual separators and emotional amplifiers — designed for sound-off reading</span></div>
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">CTA:</strong> Consistently "Shop now" — no soft CTAs, no "Learn more". Direct conversion intent across the entire library.</span></div>
+                        <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Copy length:</strong> Medium — typically 3-6 sentences. Enough to deliver the PAS framework but not long enough to lose attention.</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                <p class="font-semibold text-slate-700 text-sm mb-4">Strongest Hook Examples</p>
+                <div class="space-y-3">
+                    <div class="flex gap-3 items-start"><span class="hook-chip flex-shrink-0">Confession</span><blockquote class="text-sm text-slate-700 italic">"I have a confession... I LIED. I didn't think we could make our detergent sheets any cheaper."</blockquote></div>
+                    <div class="flex gap-3 items-start"><span class="hook-chip flex-shrink-0">Shock</span><blockquote class="text-sm text-slate-700 italic">"You'll be SHOCKED to learn what's actually in your dishwashing detergent…"</blockquote></div>
+                    <div class="flex gap-3 items-start"><span class="hook-chip flex-shrink-0">PAS</span><blockquote class="text-sm text-slate-700 italic">"The simple change with a MASSIVE impact 🫱🏻‍🫲🏼 Most detergents...❌ Full of toxic chemicals ☣️ ❌ Packaged in plastic..."</blockquote></div>
+                    <div class="flex gap-3 items-start"><span class="hook-chip flex-shrink-0">Negative Review</span><blockquote class="text-sm text-slate-700 italic">"We just got the WORST 1-star review… Even after winning Product Review's 2025 Laundry Detergent of the Year."</blockquote></div>
+                    <div class="flex gap-3 items-start"><span class="hook-chip flex-shrink-0">Savings</span><blockquote class="text-sm text-slate-700 italic">"Cleaning hack saving homes THOUSANDS $ 🫱🏻‍🫲🏼 Most detergents...❌ Expensive, 90% tap water 💰"</blockquote></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STRATEGY -->
+        <section id="strategy" class="fade-in">
+            <p class="section-label">Strategic Observations</p>
+            <h2 class="text-xl font-bold text-slate-800 mb-6">What They're Doing &amp; Not Doing</h2>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <p class="font-semibold text-slate-700 text-sm mb-3 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-success-600 inline-block"></span>What They Are Doing</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-success-400 mt-1.5 flex-shrink-0"></span>Running a multi-identity paid stack: brand page + founder page + external influencers simultaneously</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-success-400 mt-1.5 flex-shrink-0"></span>Heavy reliance on discount and offer mechanics — free gifts, 50% off bundles, flash sales, birthday sales</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-success-400 mt-1.5 flex-shrink-0"></span>Actively expanding into dishwashing sheets (5+ new ad clusters in Mar 2026) using the same proven PAS framework from laundry</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-success-400 mt-1.5 flex-shrink-0"></span>Testing a premium/luxury angle ("Inspired by Chanel") with 7 ad variants — a significant strategic bet on positioning shift</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-success-400 mt-1.5 flex-shrink-0"></span>Leveraging third-party awards ("Product Review's 2025 Laundry Detergent of the Year") and B Corp certification as trust signals</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-success-400 mt-1.5 flex-shrink-0"></span>Running large clusters (5-7 ad variants) for key campaigns — high testing volume on proven concepts</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                    <p class="font-semibold text-slate-700 text-sm mb-3 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-danger-600 inline-block"></span>What They're NOT Doing</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-danger-400 mt-1.5 flex-shrink-0"></span>No carousel ads — completely absent from their format mix despite the category lending itself to multi-product showcase</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-danger-400 mt-1.5 flex-shrink-0"></span>No explicit subscribe-and-save ads — they have subscription offers in bundles but no ad directly leads with the recurring revenue angle</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-danger-400 mt-1.5 flex-shrink-0"></span>No before/after or results demonstration — the category is highly suitable for visual proof ("see how clean this white shirt gets") but absent</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-danger-400 mt-1.5 flex-shrink-0"></span>No comparison advertising — despite building their brand on contrast vs conventional detergent, no direct head-to-head brand comparison</li>
+                        <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-danger-400 mt-1.5 flex-shrink-0"></span>No long-form educational content — ingredient transparency is a core brand pillar but they're not running ingredient education ads</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4 bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                <p class="font-semibold text-slate-700 text-sm mb-3">Offer &amp; Funnel Strategy</p>
+                <div class="space-y-2 text-sm text-slate-600">
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Offer type:</strong> Heavy discounting culture — 50% off bundles, free gift values, flash sales, birthday promos. This is primarily an offer-led paid stack, not a brand-led one.</span></div>
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Funnel position:</strong> Almost entirely bottom-of-funnel — "Shop Now" CTAs, direct-to-bundle landing pages, urgency language. Very few pure awareness ads in the visible library.</span></div>
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">AOV strategy:</strong> Bundles are the primary conversion vehicle — Everything Bundle v2, v4, Clean Home Starter Kit, Scent Bundle. Nearly every high-longevity ad routes to a multi-product bundle, not a single PDP.</span></div>
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Subscription signal:</strong> The "WORST 1-star review" ad (198 days) routes to the Everything Bundle with a selling plan parameter — this suggests they're quietly testing subscription as a conversion option without making it the headline of the ad.</span></div>
+                </div>
+            </div>
+
+            <!-- A/B Test Detection -->
+            <div class="mt-4 bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                <p class="font-semibold text-slate-700 text-sm mb-1 flex items-center gap-2">
+                    <svg class="w-4 h-4 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                    Apparent A/B Tests
+                </p>
+                <p class="text-xs text-slate-400 mb-4">Ad clusters revealing what Lucent Globe is actively trying to optimise and where they lack confidence.</p>
+                <div class="space-y-4">
+                    <div class="border border-slate-100 rounded-lg p-4">
+                        <p class="text-xs font-semibold text-accent-600 mb-2 uppercase tracking-wide">Test Cluster 1: PAS hook variation — "simple change" vs "cleaning hack" vs "smart home owners"</p>
+                        <div class="space-y-2 mb-3">
+                            <div class="flex gap-2 text-sm text-slate-600">
+                                <span class="hook-chip flex-shrink-0">Control</span>
+                                <span class="italic">"The simple change with a MASSIVE impact 🫱🏻‍🫲🏼 Most detergents...❌ Full of toxic chemicals..."</span>
+                            </div>
+                            <div class="flex gap-2 text-sm text-slate-600">
+                                <span class="hook-chip flex-shrink-0">Variant A</span>
+                                <span class="italic">"Cleaning hack saving homes THOUSANDS $ 🫱🏻‍🫲🏼 Most detergents...❌ Expensive, 90% tap water..."</span>
+                            </div>
+                            <div class="flex gap-2 text-sm text-slate-600">
+                                <span class="hook-chip flex-shrink-0">Variant B</span>
+                                <span class="italic">"Smart home owners saving THOUSANDS $ with cleaning hack 🫱🏻‍🫲🏼 Most detergents...❌ Expensive..."</span>
+                            </div>
+                            <div class="flex gap-2 text-sm text-slate-600">
+                                <span class="hook-chip flex-shrink-0">Variant C</span>
+                                <span class="italic">"2026 cleaning hack saving Aussies THOUSANDS $..."</span>
+                            </div>
+                            <div class="flex gap-2 text-sm text-slate-600">
+                                <span class="hook-chip flex-shrink-0">Variant D</span>
+                                <span class="italic">"Easy 2026 upgrade with MASSIVE impact..."</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500"><strong>What they're testing:</strong> Impact (change, upgrade) vs savings (thousands $, cleaning hack) vs identity (smart home owners, Aussies). Same ❌ problem list body in every variant — only the opening framing changes. The control ("simple change") has been running since Nov 2025 and still spawning new clusters, suggesting it's their best-performing baseline.</p>
+                    </div>
+                    <div class="border border-slate-100 rounded-lg p-4">
+                        <p class="text-xs font-semibold text-accent-600 mb-2 uppercase tracking-wide">Test Cluster 2: Brand page vs Founder page — same message, different identity</p>
+                        <div class="space-y-2 mb-3">
+                            <div class="flex gap-2 text-sm text-slate-600">
+                                <span class="hook-chip flex-shrink-0">Brand Page</span>
+                                <span class="italic">PAS-format ad with "The simple change..." → Everything Bundle</span>
+                            </div>
+                            <div class="flex gap-2 text-sm text-slate-600">
+                                <span class="hook-chip flex-shrink-0">Founder Page</span>
+                                <span class="italic">Confession/story-format ad by "Brodie and Roger" → Everything Bundle v2</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500"><strong>What they're testing:</strong> Brand authority vs founder authenticity for the same product. Notably, both founder-page ads (290 days and 198 days) are the longest-running ads in the entire library — this is strong evidence that founder-identity creative is outperforming brand creative for this audience.</p>
+                    </div>
+                    <div class="border border-slate-100 rounded-lg p-4">
+                        <p class="text-xs font-semibold text-accent-600 mb-2 uppercase tracking-wide">Test Cluster 3: Luxury positioning — "Inspired by Chanel" (7-variant cluster)</p>
+                        <div class="space-y-2 mb-3">
+                            <div class="flex gap-2 text-sm text-slate-600">
+                                <span class="hook-chip flex-shrink-0">Luxury Hook</span>
+                                <span class="italic">"Inspired by Chanel. Made for Laundry. These limited edition laundry sheets bring a touch of luxury to..."</span>
+                            </div>
+                            <div class="flex gap-2 text-sm text-slate-600">
+                                <span class="hook-chip flex-shrink-0">Standard Hook</span>
+                                <span class="italic">"The simple change with a MASSIVE impact..." (control, running in parallel)</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500"><strong>What they're testing:</strong> Aspirational/premium positioning vs functional/problem-solving positioning. The 7-variant cluster (launched Jan 29) suggests a major budget investment in this test. If this cluster reaches evergreen status, expect a significant brand pivot toward luxury messaging in their future ad strategy.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Landing Page Destinations -->
+            <div class="mt-4 bg-white rounded-xl border border-slate-100 shadow-sm p-6">
+                <p class="font-semibold text-slate-700 text-sm mb-1 flex items-center gap-2">
+                    <svg class="w-4 h-4 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    Landing Page Destinations
+                </p>
+                <p class="text-xs text-slate-400 mb-4">Where top ads send traffic — reveals Lucent Globe's conversion funnel architecture.</p>
+                <div class="space-y-2 text-sm text-slate-600">
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Bundle / Kit Pages (majority):</strong> Everything Bundle v2 and v4, Clean Home Starter Kit v1 and v2, Scent Bundle — the dominant destination for evergreen ads. AOV-focused funnel strategy.</span></div>
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Product Detail Pages (PDPs):</strong> Eco Laundry Sheets, Dishwashing Sheets, Midnight Muse Limited Edition — used for single-product focus ads, particularly new launches and category expansion (dishwashing).</span></div>
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-success-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Special Offer / Deal Pages:</strong> "Special Offer: Laundry Detergent Sheets Blue Raspberry", "Deal of the Day: Buy Dishwashing Sheets Get Free Dish Booster" — urgency ads route to dedicated deal pages, not standard PDPs. This confirms a separate conversion architecture for promotional traffic.</span></div>
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-warn-400 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">Collection / Sale Pages:</strong> Birthday Sale collection — seasonal events route to curated collection pages rather than specific products. This is a browse-and-discover model for high-intent sale traffic.</span></div>
+                    <div class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-slate-300 mt-1.5 flex-shrink-0"></span><span><strong class="text-slate-700">No quiz funnel detected:</strong> Like Frank Body, Lucent Globe does not use a quiz/skin-type-equivalent funnel. All traffic goes directly to product or bundle pages — no lead capture, no quiz, no intermediate step.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECOMMENDATIONS -->
+        <section id="recommendations" class="fade-in">
+            <p class="section-label">Recommendations</p>
+            <h2 class="text-xl font-bold text-slate-800 mb-2">What to Test &amp; Exploit</h2>
+            <p class="text-sm text-slate-500 mb-6">Based on gaps and patterns identified in Lucent Globe's current ad library.</p>
+            <div class="space-y-3">
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-5 flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 font-bold text-sm flex items-center justify-center">1</div>
+                    <div>
+                        <p class="font-semibold text-slate-800 text-sm mb-1">Own the subscribe-and-save angle they're quietly hiding</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">Lucent Globe quietly routes their trust-based founder ad to a subscription bundle URL but doesn't advertise the subscription benefit. Their audience is already making repeat purchases (they sell a consumable) — any competitor that explicitly leads with "set-and-forget" or "never run out" messaging as the headline offer could own the LTV conversation that Lucent Globe is leaving on the table.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-5 flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 font-bold text-sm flex items-center justify-center">2</div>
+                    <div>
+                        <p class="font-semibold text-slate-800 text-sm mb-1">Run a before/after results video — the gap they can't fill</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">Lucent Globe's entire library attacks the problem with words and ❌ bullet points but never shows visual proof of results — no "watch this white shirt after one wash" moment. For a cleaning product, the visual demonstration is the ultimate credibility signal. A single well-produced before/after video would counter their entire approach with evidence rather than assertion.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-5 flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 font-bold text-sm flex items-center justify-center">3</div>
+                    <div>
+                        <p class="font-semibold text-slate-800 text-sm mb-1">Exploit their heavy discount reliance to position on quality</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">Lucent Globe runs flash sales, 50% off bundles, birthday sales, and free gift offers constantly — their brand is built on being cheap relative to competitors. A competitor running a premium, full-price, no-discount paid strategy ("we don't do sales — we do standards") occupies a position Lucent Globe structurally cannot compete in without undermining their own pricing history.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-5 flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 font-bold text-sm flex items-center justify-center">4</div>
+                    <div>
+                        <p class="font-semibold text-slate-800 text-sm mb-1">Target the "Chanel" audience they're chasing — before they get there</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">Lucent Globe's 7-variant "Inspired by Chanel" cluster signals they're trying to move upmarket. If that test succeeds, they will be competing for a premium home-cleaning audience. Any competitor with a credible premium/design-forward positioning should move now — before Lucent Globe's luxury pivot is proven — because once an incumbent owns a new positioning in paid media, unseating them costs 3-5x more.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-5 flex gap-4">
+                    <div class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 font-bold text-sm flex items-center justify-center">5</div>
+                    <div>
+                        <p class="font-semibold text-slate-800 text-sm mb-1">Test a PAS-format ad for dishwashing — the category is wide open</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">Lucent Globe is only 6 weeks into their dishwashing sheet push and has not yet found an evergreen hook for that category. Their dishwashing ads are the least-proven in their library. Any competitor with a dishwashing product should move aggressively — their own proven laundry framework can be ported directly ("Dishwasher pods are full of forever chemicals ❌") but Lucent Globe hasn't scaled it yet, leaving the door open.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RAW DATA -->
+        <section id="raw-data" class="fade-in">
+            <p class="section-label">Raw Data</p>
+            <h2 class="text-xl font-bold text-slate-800 mb-1">All Ad Clusters Collected</h2>
+            <p class="text-sm text-slate-500 mb-6">Click any column header to sort. Audit date: 25 March 2026. Days active calculated from start date to audit date.</p>
+            <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="sortable w-full text-sm text-left">
+                        <thead>
+                            <tr class="border-b border-slate-100 bg-slate-50">
+                                <th class="sort-arrow px-4 py-3 text-xs font-semibold text-slate-500">Format</th>
+                                <th class="sort-arrow px-4 py-3 text-xs font-semibold text-slate-500">Hook / Opening Copy</th>
+                                <th class="sort-arrow px-4 py-3 text-xs font-semibold text-slate-500">CTA</th>
+                                <th class="sort-arrow px-4 py-3 text-xs font-semibold text-slate-500">Platforms</th>
+                                <th class="sort-arrow px-4 py-3 text-xs font-semibold text-slate-500">Landing Page</th>
+                                <th class="sort-arrow px-4 py-3 text-xs font-semibold text-slate-500">Started</th>
+                                <th class="sort-arrow px-4 py-3 text-xs font-semibold text-slate-500">Days Active</th>
+                                <th class="sort-arrow px-4 py-3 text-xs font-semibold text-slate-500">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">I have a confession... I LIED. I didn't think we could make our detergent sheets any cheaper</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Everything Bundle v2</td><td class="px-4 py-3 text-slate-500 text-xs">Jun 8, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">290</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video / Image</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">Get $93.97 worth of FREE GIFTS with our Clean Home Starter Kit. The offer ends SOON!</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Clean Home Starter Kit</td><td class="px-4 py-3 text-slate-500 text-xs">Jun 17, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">281</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (Influencer)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">I'm so excited to announce that @lucentglobe has just launched 4 new gorgeous laundry detergent sheet scents</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Limited Edition Scent Bundle</td><td class="px-4 py-3 text-slate-500 text-xs">Jul 28, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">240</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">You'll be SHOCKED to learn what's actually in your dishwashing detergent…</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Detergent Sheet Bundle (50% OFF)</td><td class="px-4 py-3 text-slate-500 text-xs">Sep 5, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">201</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">We just got the WORST 1-star review… Even after winning Product Review's 2025 Laundry Detergent of the Year</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Everything Bundle v2 (subscription)</td><td class="px-4 py-3 text-slate-500 text-xs">Sep 8, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">198</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (3 ads)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">WE NEED TO APOLOGISE... 😢 We really thought our best deals were behind us. Then we remembered...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Eco Laundry Sheets PDP</td><td class="px-4 py-3 text-slate-500 text-xs">Oct 12, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">164</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">The simple change with a MASSIVE impact 🫱🏻‍🫲🏼 Most detergents...❌ Full of toxic chemicals...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Detergent Sheet Bundle</td><td class="px-4 py-3 text-slate-500 text-xs">Nov 2, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">143</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (3 ads)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">The simple change with a MASSIVE impact — toxic chemicals, plastic packaging...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Eco Laundry Sheets PDP</td><td class="px-4 py-3 text-slate-500 text-xs">Nov 5, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">140</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (5 ads)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">$15 Detergent Sheets?!?!?!?!? 🤯 We've lost our minds! 24 Hour Flash Sale - Get in before it ends...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Special Offer PDP (blue raspberry)</td><td class="px-4 py-3 text-slate-500 text-xs">Dec 3, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">112</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">The simple change with a MASSIVE impact — dishwashing edition</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Dishwashing Sheets PDP</td><td class="px-4 py-3 text-slate-500 text-xs">Dec 8, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">107</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (Influencer)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">I never realised how many plastic bottles we were tossing after every wash! — Jess Swann</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Eco Laundry Sheets PDP</td><td class="px-4 py-3 text-slate-500 text-xs">Dec 9, 2025</td><td class="px-4 py-3 font-semibold text-slate-700">106</td><td class="px-4 py-3"><span class="badge-pill badge-evergreen">Evergreen</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (3 ads)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">The simple change with a MASSIVE impact — dishwashing version 2</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Dishwashing Sheets PDP</td><td class="px-4 py-3 text-slate-500 text-xs">Jan 3, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">81</td><td class="px-4 py-3"><span class="badge-pill badge-strong">Strong</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (3 ads)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">Easy 2026 upgrade with MASSIVE impact 🫱🏻‍🫲🏼 Most detergents...❌ Expensive, 90% tap water...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Eco Laundry Sheets PDP</td><td class="px-4 py-3 text-slate-500 text-xs">Jan 15, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">69</td><td class="px-4 py-3"><span class="badge-pill badge-strong">Strong</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (7 ads)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">Inspired by Chanel. Made for Laundry. These limited edition laundry sheets bring a touch of luxury...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Midnight Muse Limited Edition PDP</td><td class="px-4 py-3 text-slate-500 text-xs">Jan 29, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">55</td><td class="px-4 py-3"><span class="badge-pill badge-strong">Strong</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">The simple change with a MASSIVE impact — Clean Home Starter Kit v2</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Clean Home Starter Kit v2</td><td class="px-4 py-3 text-slate-500 text-xs">Feb 3, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">50</td><td class="px-4 py-3"><span class="badge-pill badge-strong">Strong</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">Smart home owners saving THOUSANDS $ with cleaning hack 🫱🏻‍🫲🏼 Most detergents...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Special Offer Laundry Scent Bundle</td><td class="px-4 py-3 text-slate-500 text-xs">Feb 18, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">35</td><td class="px-4 py-3"><span class="badge-pill badge-strong">Strong</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">Smart home owners saving THOUSANDS $ with cleaning hack — variant 2</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Special Offer Laundry Scent Bundle</td><td class="px-4 py-3 text-slate-500 text-xs">Feb 18, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">35</td><td class="px-4 py-3"><span class="badge-pill badge-strong">Strong</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (2 ads)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">2026 cleaning hack saving Aussies THOUSANDS $ 🫱🏻‍🫲🏼 Most detergents...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Special Offer Laundry Scent Bundle</td><td class="px-4 py-3 text-slate-500 text-xs">Feb 25, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">28</td><td class="px-4 py-3"><span class="badge-pill badge-recent">Recent</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">We're Officially B Corp Certified, and we're incredibly proud of what that means.</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Special Offer Laundry Scent Bundle</td><td class="px-4 py-3 text-slate-500 text-xs">Feb 27, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">26</td><td class="px-4 py-3"><span class="badge-pill badge-recent">Recent</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (3 ads)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">Cleaning hack saving homes THOUSANDS $ 🫱🏻‍🫲🏼 Most detergents...❌ Expensive, 90% tap water...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Everything Bundle v4</td><td class="px-4 py-3 text-slate-500 text-xs">Mar 2, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">23</td><td class="px-4 py-3"><span class="badge-pill badge-recent">Recent</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">Cleaning hack saving homes THOUSANDS $ — Buy Dishwashing Sheets, Get Free Dish Booster</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Deal of Day: Dishwashing + Free Booster</td><td class="px-4 py-3 text-slate-500 text-xs">Mar 9, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">16</td><td class="px-4 py-3"><span class="badge-pill badge-recent">Recent</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">It's our 4th BIRTHDAY! 🎉🎂 We've got up to 52% OFF Storewide! PLUS our FIRST EVER new scent...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Birthday Sale Collection</td><td class="px-4 py-3 text-slate-500 text-xs">Mar 12, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">13</td><td class="px-4 py-3"><span class="badge-pill badge-recent">Recent</span></td></tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50 transition-colors"><td class="px-4 py-3 font-medium text-slate-700">Video (5 ads)</td><td class="px-4 py-3 text-slate-600 max-w-xs"><span class="line-clamp-2">Dishwasher pods are full of forever chemicals ❌ Packaged in plastic ❌ Expensive ❌ Harming your gut...</span></td><td class="px-4 py-3 text-slate-600">Shop Now</td><td class="px-4 py-3 text-slate-500 text-xs">FB, IG, Reels, Stories</td><td class="px-4 py-3 text-slate-500 text-xs">Dishwashing Detergent Sheets PDP</td><td class="px-4 py-3 text-slate-500 text-xs">Mar 19, 2026</td><td class="px-4 py-3 font-semibold text-slate-700">6</td><td class="px-4 py-3"><span class="badge-pill badge-recent">Recent</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-8 border-t border-slate-200 text-center">
+            <p class="text-xs text-slate-400">Generated by Meta Ad Analyzer · 25 March 2026 · Data from Meta Ad Library (public)</p>
+            <p class="text-xs text-slate-400 mt-1">Longevity-based performance signals are directional — not a substitute for actual campaign data.</p>
+        </footer>
+
+    </div>
+</main>
+
+<script>
+    document.querySelectorAll('.sortable').forEach(table => {
+        const headers = table.querySelectorAll('th');
+        let currentSort = { col: null, dir: 'asc' };
+        headers.forEach((header, index) => {
+            header.addEventListener('click', () => {
+                const tbody = table.querySelector('tbody');
+                const rows = Array.from(tbody.querySelectorAll('tr'));
+                const dir = (currentSort.col === index && currentSort.dir === 'asc') ? 'desc' : 'asc';
+                headers.forEach(h => { h.classList.remove('sort-asc','sort-desc'); h.classList.add('sort-arrow'); });
+                header.classList.remove('sort-arrow');
+                header.classList.add(dir === 'asc' ? 'sort-asc' : 'sort-desc');
+                rows.sort((a, b) => {
+                    let av = a.cells[index]?.textContent.trim() || '';
+                    let bv = b.cells[index]?.textContent.trim() || '';
+                    const an = parseFloat(av), bn = parseFloat(bv);
+                    if (!isNaN(an) && !isNaN(bn)) return dir === 'asc' ? an - bn : bn - an;
+                    return dir === 'asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+                });
+                rows.forEach(r => tbody.appendChild(r));
+                currentSort = { col: index, dir };
+            });
+        });
+    });
+
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(l => l.classList.remove('active'));
+                const link = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                if (link) link.classList.add('active');
+            }
+        });
+    }, { rootMargin: '-15% 0px -60% 0px' });
+    sections.forEach(s => observer.observe(s));
+</script>
+
+
+</body></html>
