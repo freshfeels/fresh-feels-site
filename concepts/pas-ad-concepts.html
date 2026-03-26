@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)file:///C:/Users/david/Documents/Claude%20Cowork/Fresh%20Feels/Meta%20Ads/meta-ad-concepts.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Feels | Meta Ad Concepts | PAS Framework</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Fresh Feels _ Meta Ad Concepts _ PAS Framework_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blush: #f26b72;
+    --orange: #eb9922;
+    --green: #9dbd3b;
+    --sky: #34bde8;
+    --aqua: #6fc6a9;
+    --pink-light: #ffc20e;
+    --dark: #1a1a2e;
+    --darker: #12121f;
+    --mid: #252540;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: #f8f8fc; color: var(--text); line-height: 1.6; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--darker) 0%, #1e1e3f 60%, #2a1a3e 100%);
+    padding: 80px 40px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(242,107,114,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: -60px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(52,189,232,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-tag {
+    display: inline-block;
+    background: rgba(242,107,114,0.2);
+    border: 1px solid rgba(242,107,114,0.4);
+    color: var(--blush);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    position: relative; z-index: 1;
+  }
+  .hero h1 span { color: var(--blush); }
+  .hero p {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.7);
+    max-width: 600px;
+    margin: 0 auto 32px;
+    position: relative; z-index: 1;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative; z-index: 1;
+  }
+  .hero-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  .hero-meta-item .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+  }
+
+  /* NAV */
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 40px;
+  }
+  .sticky-nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .sticky-nav-inner::-webkit-scrollbar { display: none; }
+  .filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1.5px solid var(--border);
+    background: white;
+    color: var(--muted);
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .filter-btn:hover { border-color: var(--blush); color: var(--blush); }
+  .filter-btn.active { background: var(--dark); border-color: var(--dark); color: white; }
+  .filter-btn .count {
+    background: rgba(255,255,255,0.2);
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-size: 11px;
+  }
+  .filter-btn:not(.active) .count { background: var(--border); color: var(--muted); }
+
+  /* MAIN */
+  .main { max-width: 1200px; margin: 0 auto; padding: 48px 40px; }
+
+  /* INTRO STRIP */
+  .intro-strip {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  .intro-strip-item { text-align: center; }
+  .intro-strip-item .label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 6px; }
+  .intro-strip-item .value { font-size: 1rem; font-weight: 600; color: var(--text); }
+
+  /* SECTION HEADER */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 40px 0 20px;
+  }
+  .section-header-dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .section-header h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .section-header .divider {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+  .section-header .tally {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--border);
+    padding: 3px 10px;
+    border-radius: 10px;
+  }
+
+  /* AD CARD */
+  .ad-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .ad-card:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.08); transform: translateY(-2px); }
+  .ad-card-header {
+    padding: 20px 28px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .ad-number {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+    color: white;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .ad-title-block { flex: 1; }
+  .ad-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .ad-badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .badge-laundry { background: #fff8ec; color: var(--orange); border: 1px solid rgba(235,153,34,0.3); }
+  .badge-dishwasher { background: #edfaf5; color: #2a9d8f; border: 1px solid rgba(111,198,169,0.4); }
+  .badge-multipurpose { background: #e8f6fd; color: #0e7fb5; border: 1px solid rgba(52,189,232,0.3); }
+  .badge-brand-all { background: #f3f0ff; color: #6d28d9; border: 1px solid rgba(109,40,217,0.2); }
+  .badge-ugc { background: #f0fdf4; color: #16a34a; border: 1px solid rgba(22,163,74,0.25); }
+  .badge-brand-prod { background: #fff1f2; color: var(--blush); border: 1px solid rgba(242,107,114,0.25); }
+  .badge-reel { background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; }
+  .badge-carousel { background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; }
+  .badge-static { background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; }
+
+  /* CARD BODY */
+  .ad-card-body {
+    padding: 24px 28px;
+  }
+
+  /* HOOK CALLOUT */
+  .hook-callout {
+    background: var(--darker);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .hook-callout-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 8px;
+  }
+  .hook-callout-text {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.4;
+    font-style: italic;
+  }
+  .hook-timer {
+    position: absolute;
+    top: 14px; right: 16px;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.35);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* PAS GRID */
+  .pas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .pas-block {
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .pas-block-p { background: #fff5f5; border: 1px solid rgba(239,68,68,0.15); }
+  .pas-block-a { background: #fff8f0; border: 1px solid rgba(249,115,22,0.15); }
+  .pas-block-s { background: #f0fdf4; border: 1px solid rgba(34,197,94,0.15); }
+  .pas-label {
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .pas-label-p { color: #dc2626; }
+  .pas-label-a { color: #ea580c; }
+  .pas-label-s { color: #16a34a; }
+  .pas-block p { font-size: 0.875rem; color: var(--text); line-height: 1.55; }
+
+  /* TWO COL */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 0;
+  }
+  .detail-block {
+    background: #f8f9fc;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .detail-block-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .detail-block p, .detail-block ul { font-size: 0.875rem; color: var(--text); line-height: 1.6; }
+  .detail-block ul { padding-left: 18px; }
+  .detail-block ul li { margin-bottom: 4px; }
+
+  /* SCRIPT BLOCK */
+  .script-block {
+    background: #f8f9fc;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--blush);
+    border-radius: 0 12px 12px 0;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .script-block-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .script-block p { font-size: 0.9rem; color: var(--text); line-height: 1.65; font-style: italic; }
+
+  /* CTA ROW */
+  .cta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 28px;
+    background: #f8f9fc;
+    border-top: 1px solid var(--border);
+  }
+  .cta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+  }
+  .execution-note {
+    font-size: 12px;
+    color: var(--muted);
+    font-style: italic;
+    max-width: 500px;
+  }
+
+  /* HIDDEN */
+  .ad-card.hidden { display: none; }
+
+  /* PRINT */
+  @media print {
+    .sticky-nav { display: none; }
+    .hero { padding: 40px; }
+    .ad-card { break-inside: avoid; }
+  }
+  @media (max-width: 768px) {
+    .hero { padding: 60px 20px 40px; }
+    .main { padding: 32px 20px; }
+    .sticky-nav { padding: 0 20px; }
+    .pas-grid { grid-template-columns: 1fr; }
+    .two-col { grid-template-columns: 1fr; }
+    .intro-strip { grid-template-columns: 1fr; }
+    .ad-card-header { flex-direction: column; }
+    .cta-row { flex-direction: column; gap: 8px; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">Fresh Feels / Meta Ads / PAS Framework</div>
+  <h1>Paid Ad Concepts<br><span>Built on Problem. Agitate. Solve.</span></h1>
+  <p>13 ready-to-execute ad concepts for Meta. Each one leads with a real problem, makes the pain specific, and lets Fresh Feels do the work. A mix of UGC and brand-produced formats across Instagram and Facebook.</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><span class="dot" style="background:#eb9922"></span> 4 Laundry</div>
+    <div class="hero-meta-item"><span class="dot" style="background:#6fc6a9"></span> 3 Dishwasher</div>
+    <div class="hero-meta-item"><span class="dot" style="background:#34bde8"></span> 3 Multipurpose</div>
+    <div class="hero-meta-item"><span class="dot" style="background:#f26b72"></span> 3 Cross-range</div>
+    <div class="hero-meta-item"><span class="dot" style="background:#16a34a"></span> 8 UGC concepts</div>
+  </div>
+</div>
+
+<!-- STICKY NAV -->
+<div class="sticky-nav">
+  <div class="sticky-nav-inner">
+    <button class="filter-btn active" onclick="filter(&#39;all&#39;)">All <span class="count">13</span></button>
+    <button class="filter-btn" onclick="filter(&#39;laundry&#39;)">Laundry <span class="count">4</span></button>
+    <button class="filter-btn" onclick="filter(&#39;dishwasher&#39;)">Dishwasher <span class="count">3</span></button>
+    <button class="filter-btn" onclick="filter(&#39;multipurpose&#39;)">Multipurpose <span class="count">3</span></button>
+    <button class="filter-btn" onclick="filter(&#39;cross&#39;)">Cross-range <span class="count">3</span></button>
+    <button class="filter-btn" onclick="filter(&#39;ugc&#39;)">UGC only <span class="count">8</span></button>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <div class="intro-strip">
+    <div class="intro-strip-item">
+      <div class="label">Framework</div>
+      <div class="value">Problem / Agitate / Solve</div>
+    </div>
+    <div class="intro-strip-item">
+      <div class="label">Platforms</div>
+      <div class="value">Instagram + Facebook</div>
+    </div>
+    <div class="intro-strip-item">
+      <div class="label">Writing rules</div>
+      <div class="value">No em or en dashes. Write like a real person.</div>
+    </div>
+  </div>
+
+  <!-- LAUNDRY SECTION -->
+  <div class="section-header">
+    <div class="section-header-dot" style="background:var(--orange)"></div>
+    <h2>Laundry Sheets</h2>
+    <div class="divider"></div>
+    <span class="tally">4 concepts</span>
+  </div>
+
+  <!-- AD 01 -->
+  <div class="ad-card" data-category="laundry ugc">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--orange)">01</div>
+      <div class="ad-title-block">
+        <div class="ad-title">The Half-Used Bottle</div>
+        <div class="ad-badges">
+          <span class="badge badge-laundry">Laundry</span>
+          <span class="badge badge-ugc">UGC</span>
+          <span class="badge badge-reel">Reel 15-30s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"How many half-used detergent bottles do you have under your sink right now?"</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Most people have two or three half-used laundry bottles sitting under the sink. You keep buying new ones before the old ones are finished.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>That's money already spent sitting there going to waste. Heavy bottles that spill. Never knowing how much to use. Running out at the worst time.</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>Fresh Feels laundry sheets are pre-measured. One sheet per wash. No bottles, no measuring, no waste. 80 washes in a box smaller than a cereal packet.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script</div>
+        <p>"How many half-used detergent bottles are under your sink right now? [holds up two or three bottles] That's money just sitting there. I switched to Fresh Feels laundry sheets and genuinely cannot believe I waited this long. Pre-measured, no mess, and this little box does 80 washes. Link in bio."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Real home laundry cupboard, not styled</li>
+            <li>Hold up actual old bottles (the more the better)</li>
+            <li>Reveal Fresh Feels box alongside the mess</li>
+            <li>Show sheet dissolving in machine drum</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>Genuinely messy cupboard works better than a tidy one</li>
+            <li>Creator should be real and slightly exasperated, not polished</li>
+            <li>The reveal moment is the payoff, give it a beat</li>
+            <li>Caption mirrors the hook line</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--orange)">Stop buying bottles. Link in bio.</div>
+      <div class="execution-note">Works well as a Reel with text overlay. Scale if it gets strong organic hold rate.</div>
+    </div>
+  </div>
+
+  <!-- AD 02 -->
+  <div class="ad-card" data-category="laundry ugc">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--orange)">02</div>
+      <div class="ad-title-block">
+        <div class="ad-title">I Was Wrong</div>
+        <div class="ad-badges">
+          <span class="badge badge-laundry">Laundry</span>
+          <span class="badge badge-ugc">UGC</span>
+          <span class="badge badge-reel">Reel 15-30s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"I genuinely thought laundry sheets were a gimmick."</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>A lot of people assume sheets cannot clean as well as liquid. The scepticism is real and it stops them from switching.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>"I'd seen these before and ignored them. Figured they were one of those things that sounds good but does not actually work. Eco products have let me down before."</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>Three washes later, gym kit smells better than it ever has. Cleared two bottles out of the laundry already. Genuinely embarrassed it took this long.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script</div>
+        <p>"I genuinely thought laundry sheets were a gimmick. I'd seen them before and ignored them because eco alternatives have let me down before. Then I tried Fresh Feels. Three washes later my gym kit smells better than it ever has. I've cleared two bottles out of my laundry already. I was wrong. Link in bio if you want to try them."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Creator talking to camera, casual and honest</li>
+            <li>Show the product mid-video</li>
+            <li>Cut to laundry coming out of the machine</li>
+            <li>Smell the clothes. Genuine surprised reaction.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>The sceptic-to-convert format is one of the strongest trust builders for new audiences</li>
+            <li>Do not over-script this. Brief the creator on the journey, not the words.</li>
+            <li>"I was wrong" moments remove risk for people on the fence</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--orange)">Try them yourself. Link in bio.</div>
+      <div class="execution-note">One of the highest-trust formats on Meta. Do not polish it. Scale if organic version lands.</div>
+    </div>
+  </div>
+
+  <!-- AD 03 -->
+  <div class="ad-card" data-category="laundry">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--orange)">03</div>
+      <div class="ad-title-block">
+        <div class="ad-title">How Many Scoops?</div>
+        <div class="ad-badges">
+          <span class="badge badge-laundry">Laundry</span>
+          <span class="badge badge-brand-prod">Brand-produced</span>
+          <span class="badge badge-reel">Reel 15s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"Quick question. Do you actually know how much detergent to use?"</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Nobody measures detergent properly. Everyone guesses. The lines on the cap are confusing and nobody trusts them.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>Use too much and you're wasting money and leaving residue on clothes. Use too little and the load does not come clean. You just pour until it looks right and hope for the best.</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>Fresh Feels laundry sheets are already measured. One sheet equals one load. Nothing to pour. Nothing to guess. Drop it in the drum and start the machine.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script / VO</div>
+        <p>"Do you actually know how much detergent to use? [show confusing measuring cap] You're either using too much and wasting money, or not enough and the load's not clean. Fresh Feels sheets are pre-measured. One sheet, one load. Drop it in. Done."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Close-up of confusing measuring lines on detergent cap</li>
+            <li>Cut to hand dropping one Fresh Feels sheet into drum</li>
+            <li>Clean, simple. No clutter.</li>
+            <li>Works without sound with text overlays</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>Short and punchy. 15 seconds max.</li>
+            <li>Works well as a brand-produced cut or UGC style</li>
+            <li>The confusing cap is universally relatable. Everyone has felt this.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--orange)">Stop guessing. Link in bio.</div>
+      <div class="execution-note">Strong broad-audience hook. Relatable to anyone who does laundry.</div>
+    </div>
+  </div>
+
+  <!-- AD 04 -->
+  <div class="ad-card" data-category="laundry ugc">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--orange)">04</div>
+      <div class="ad-title-block">
+        <div class="ad-title">Cleared the Cupboard</div>
+        <div class="ad-badges">
+          <span class="badge badge-laundry">Laundry</span>
+          <span class="badge badge-ugc">UGC</span>
+          <span class="badge badge-reel">Reel 20-30s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">[opens chaotic laundry cupboard] "This used to be me."</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>The laundry cupboard is a mess. Multiple products, half-used bottles, no real system. Everyone has this problem and nobody talks about it.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>Powder, liquid, pods, softener, stain remover. Buying them all separately. Never quite running out of everything at the same time. Space it should not be using.</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>Hold up the Fresh Feels box. Show the cleared cupboard. Laundry sheets plus fragrance booster. That is the whole laundry routine in one small box.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script</div>
+        <p>"This used to be me. [shows full cupboard] Powder, liquid, pods, stain spray... all of it. Never running out of everything at the same time. I switched to Fresh Feels about two months ago. [shows cleared cupboard] These sheets do 80 washes. The fragrance booster makes everything smell incredible. That's it. Link in bio."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Before: genuinely packed, chaotic laundry shelf</li>
+            <li>After: same shelf, just the Fresh Feels box and tin</li>
+            <li>The reveal should feel satisfying and real</li>
+            <li>Do not stage it. The mess is the point.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>The replacement moment must be visually obvious</li>
+            <li>Works especially well if the creator is clearly not a "clean freak" type</li>
+            <li>Natural lighting, real home. Not styled.</li>
+            <li>Can be repurposed as a static before/after image too</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--orange)">Make the switch. Link in bio.</div>
+      <div class="execution-note">The before/after cupboard reveal is a strong evergreen format. Works across platforms.</div>
+    </div>
+  </div>
+
+  <!-- DISHWASHER SECTION -->
+  <div class="section-header">
+    <div class="section-header-dot" style="background:var(--aqua)"></div>
+    <h2>Dishwasher Sheets</h2>
+    <div class="divider"></div>
+    <span class="tally">3 concepts</span>
+  </div>
+
+  <!-- AD 05 -->
+  <div class="ad-card" data-category="dishwasher">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--aqua)">05</div>
+      <div class="ad-title-block">
+        <div class="ad-title">The Pod Problem</div>
+        <div class="ad-badges">
+          <span class="badge badge-dishwasher">Dishwasher</span>
+          <span class="badge badge-brand-prod">Brand-produced</span>
+          <span class="badge badge-reel">Reel 15s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"Why are dishwasher pods still wrapped in plastic?"</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Traditional dishwasher pods come in single-use plastic packaging inside a giant plastic tub. It is the default and nobody questions it.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>A new tub every few weeks. The plastic wrapper on the pod supposedly dissolves but does not always. The tub is huge, annoying to store and annoying to throw out. You're paying for the packaging as much as the product.</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>Fresh Feels dishwasher sheets. Fold one in half, drop it in the tray or at the bottom of the machine, close the door. No plastic. Pre-measured. Cleans properly.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script / VO</div>
+        <p>"Why are dishwasher pods still wrapped in plastic? A new tub every few weeks, plastic wrapper that barely dissolves, the whole thing is bigger than it needs to be. Fresh Feels dishwasher sheets. Fold one in half, drop it in. No plastic. Pre-measured. Done."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Hold up a pod with the plastic wrapper clearly visible</li>
+            <li>Then show a Fresh Feels sheet next to it</li>
+            <li>Drop the sheet in the machine. Close the door.</li>
+            <li>Open dishwasher to clean sparkling dishes at the end</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>The plastic wrapper on standard pods is the visual proof point. Show it clearly.</li>
+            <li>Do not lecture on sustainability. Let the visual do the work.</li>
+            <li>Keep it fast. The problem is obvious. Get to the solve quickly.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--aqua)">Make the swap. Link in bio.</div>
+      <div class="execution-note">Good awareness-level creative. Broad appeal. Strong for cold audiences.</div>
+    </div>
+  </div>
+
+  <!-- AD 06 -->
+  <div class="ad-card" data-category="dishwasher ugc">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--aqua)">06</div>
+      <div class="ad-title-block">
+        <div class="ad-title">Sparkling Glasses</div>
+        <div class="ad-badges">
+          <span class="badge badge-dishwasher">Dishwasher</span>
+          <span class="badge badge-ugc">UGC</span>
+          <span class="badge badge-reel">Reel 15-30s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">[holds glass up to window] "I need to talk about these dishwasher sheets."</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Glassware coming out of the dishwasher with a cloudy film is something almost everyone puts up with. It just seems like a dishwasher thing.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>"I tried different tablets, different rinse aids, different wash programs. Nothing worked. I assumed my dishwasher was broken or the water was too hard."</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>"Switched to Fresh Feels dishwasher sheets and the difference is honestly embarrassing." Hold glasses up to window. Crystal clear. The mineral binding agents in the formula prevent water spots.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script</div>
+        <p>"I need to talk about these dishwasher sheets. My glasses always came out with that cloudy film. I tried different tablets, different rinse aids. Nothing worked. I just assumed my dishwasher was the problem. Switched to Fresh Feels and look at this. [holds glass up to window, crystal clear] The difference is actually embarrassing. Link in bio."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Show a genuinely cloudy glass first for contrast</li>
+            <li>Hold the Fresh Feels-cleaned glass up to a window or bright light</li>
+            <li>The sparkle is the proof. Film it well.</li>
+            <li>Real kitchen, natural light</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>The visual proof here is everything. Bad lighting kills the ad.</li>
+            <li>Film near a window. Backlight through the glass is the money shot.</li>
+            <li>Creator should react genuinely. Scripted surprise reads as fake.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--aqua)">Try them yourself. Link in bio.</div>
+      <div class="execution-note">Specific, visual, relatable. The cloudy glass problem is universal. Strong conversion creative.</div>
+    </div>
+  </div>
+
+  <!-- AD 07 -->
+  <div class="ad-card" data-category="dishwasher">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--aqua)">07</div>
+      <div class="ad-title-block">
+        <div class="ad-title">Drop. Close. Done.</div>
+        <div class="ad-badges">
+          <span class="badge badge-dishwasher">Dishwasher</span>
+          <span class="badge badge-brand-prod">Brand-produced</span>
+          <span class="badge badge-carousel">Carousel 3 slides</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">Slide 1</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"Drop it. Close it. Done." [product image, clean and bold]</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Tablets are fiddly, plastic-wrapped, and need to go in exactly the right compartment. Getting placement wrong means dishes do not come clean. You have probably rewashed a load.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>Another heavy plastic tub taking up cupboard space. Another week of the same routine. There should be a simpler way.</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>Fresh Feels dishwasher sheets are flexible. Drop one in the drawer, fold it in, or split it between top and bottom trays. They dissolve fully and clean properly. No plastic. Pre-measured.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Slide Copy</div>
+        <p>Slide 1: "Drop it. Close it. Done." / Product hero shot<br>Slide 2: "No plastic wrapper. No fiddly tray. Just fold one sheet in half and drop it in." / Hand placing sheet in machine<br>Slide 3: "Clean dishes. Clear conscience. Zero plastic tub to throw out." / Open dishwasher with sparkling results + CTA</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Clean, on-brand photography</li>
+            <li>Aqua/teal colour palette to match dishwasher range</li>
+            <li>Process shot in slide 2 is key</li>
+            <li>Final slide: sparkling open dishwasher</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>Each slide must work standalone as it can appear in Feed as a single image</li>
+            <li>Bold typography. Short copy. Let the visuals carry it.</li>
+            <li>Works well as a static single image ad too</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--aqua)">Shop now. Link in bio.</div>
+      <div class="execution-note">Carousel format drives swipe-through and product education. Good for mid-funnel.</div>
+    </div>
+  </div>
+
+  <!-- MULTIPURPOSE SECTION -->
+  <div class="section-header">
+    <div class="section-header-dot" style="background:var(--sky)"></div>
+    <h2>Multipurpose Sheets</h2>
+    <div class="divider"></div>
+    <span class="tally">3 concepts</span>
+  </div>
+
+  <!-- AD 08 -->
+  <div class="ad-card" data-category="multipurpose">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--sky)">08</div>
+      <div class="ad-title-block">
+        <div class="ad-title">Twenty Bottles</div>
+        <div class="ad-badges">
+          <span class="badge badge-multipurpose">Multipurpose</span>
+          <span class="badge badge-brand-prod">Brand-produced</span>
+          <span class="badge badge-reel">Reel 15-30s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"This one small box replaces 20 spray bottles."</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Most people have four or five different spray bottles under the sink: kitchen, bathroom, glass, floor, general surface. They are bulky, they run out, and you keep buying more.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>That is a lot of plastic every year. A lot of money. A lot of "we need to add that to the list." And half of them are half-used, taking up space you do not have.</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>One box of Fresh Feels multipurpose sheets. Drop one in your reusable bottle, shake, spray. When it runs out, drop in another sheet. Same bottle, forever. 20 refills per box.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script / VO</div>
+        <p>"This one small box replaces 20 spray bottles. [opens cabinet showing multiple sprays] Most people have four or five different sprays under the sink. Drop a Fresh Feels sheet into your reusable bottle, fill with warm water, shake for 10 seconds. Kitchen, bathroom, glass, floors. Same bottle. Just keep refilling. Link in bio."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Open cabinet showing multiple spray bottles lined up</li>
+            <li>Then show one Fresh Feels box sitting next to them</li>
+            <li>The roll, drop, fill, shake sequence is satisfying. Film it well.</li>
+            <li>Spray and wipe a surface at the end. Clean finish.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>The process shot (roll, drop, fill, shake) is the hero moment. Make it look effortless.</li>
+            <li>The glass bottle is a strong visual. Use it prominently.</li>
+            <li>Mirrors the on-site "Twenty bottles from one box" hero message</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--sky)">Stop buying spray bottles. Link in bio.</div>
+      <div class="execution-note">Direct lift from the homepage hero message. Strong brand consistency. Test this early.</div>
+    </div>
+  </div>
+
+  <!-- AD 09 -->
+  <div class="ad-card" data-category="multipurpose ugc">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--sky)">09</div>
+      <div class="ad-title-block">
+        <div class="ad-title">Roll. Drop. Shake.</div>
+        <div class="ad-badges">
+          <span class="badge badge-multipurpose">Multipurpose</span>
+          <span class="badge badge-ugc">UGC</span>
+          <span class="badge badge-reel">Reel 15s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"This is all I use to clean my whole house now." [holds up one sheet]</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Cleaning the house means grabbing a different spray for every surface. Kitchen spray, bathroom spray, glass cleaner. It is more complicated than it should be.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>"I had six different sprays. Six. For one apartment. Half of them were barely used and just taking up space under the sink."</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>Roll the sheet, drop it in the 500ml bottle, fill with warm water, shake for 10 seconds. Kitchen, bathroom, floors. Everything. One bottle. One product.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script</div>
+        <p>"This is all I use to clean my whole house now. [holds up one sheet] I had six different sprays under my sink. Six. Roll the sheet, drop it in, fill with water, shake. Ten seconds. That's kitchen, bathroom, floors, all of it. Link in bio."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Fast-cut process shot: roll, drop, fill, shake, spray, wipe</li>
+            <li>Real home, real surfaces</li>
+            <li>Can work with or without voiceover. Text overlay works well.</li>
+            <li>15 seconds max. Keep the pace up.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>The process should look satisfying, not fiddly</li>
+            <li>The glass bottle is a great visual. Position it prominently.</li>
+            <li>Works well as a fast-cut Reel with trending audio</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--sky)">One sheet. Every surface. Link in bio.</div>
+      <div class="execution-note">High-energy, fast-cut format. Ideal for Instagram Reels and TikTok crosspost.</div>
+    </div>
+  </div>
+
+  <!-- AD 10 -->
+  <div class="ad-card" data-category="multipurpose ugc">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--sky)">10</div>
+      <div class="ad-title-block">
+        <div class="ad-title">The Refill</div>
+        <div class="ad-badges">
+          <span class="badge badge-multipurpose">Multipurpose</span>
+          <span class="badge badge-ugc">UGC</span>
+          <span class="badge badge-reel">Reel 15s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"You don't need to keep buying spray bottles."</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Every time a spray runs out, you throw the bottle away and buy a new one. More plastic, more money, same problem in a few weeks.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>That is by design. The cleaning industry is built around selling you the bottle every time, not just the product inside it. You are paying for packaging more than cleaning power.</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>Fresh Feels flips it. Keep your bottle. Drop a new sheet in when it runs out. 20 refills in one small box. Buy more, pay less per clean.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script</div>
+        <p>"You don't need to keep buying spray bottles. Every time one runs out you throw the whole thing away. Fresh Feels: you keep the bottle, just drop a new sheet in. [shows process] 20 refills, one little box. Link in bio."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Show an empty spray bottle being thrown in the bin</li>
+            <li>Cut to the same reusable bottle being refilled with a sheet</li>
+            <li>Simple contrast. The bin moment is the emotional beat.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>Do not lecture on sustainability. Show the practical benefit first.</li>
+            <li>The "flip" framing is strong. Creator should feel like they're letting you in on something.</li>
+            <li>Works well as UGC or brand-produced talking head</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--sky)">One bottle. Keep refilling. Link in bio.</div>
+      <div class="execution-note">Replacement framing at its clearest. Strong for cold audiences.</div>
+    </div>
+  </div>
+
+  <!-- CROSS-RANGE SECTION -->
+  <div class="section-header">
+    <div class="section-header-dot" style="background:var(--blush)"></div>
+    <h2>Cross-Range</h2>
+    <div class="divider"></div>
+    <span class="tally">3 concepts</span>
+  </div>
+
+  <!-- AD 11 -->
+  <div class="ad-card" data-category="cross ugc">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--blush)">11</div>
+      <div class="ad-title-block">
+        <div class="ad-title">What I Stopped Buying</div>
+        <div class="ad-badges">
+          <span class="badge badge-brand-all">Cross-range</span>
+          <span class="badge badge-ugc">UGC</span>
+          <span class="badge badge-reel">Reel 20-30s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"I'm going to show you what I stopped buying." [standing in front of cleaning cupboard]</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Most people are buying the same cleaning products on autopilot every week without thinking about the total cost or the total plastic.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>"I never really thought about how much I was spending or how much plastic I was going through until I actually lined it all up on the bench."</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>"These are the things I haven't bought since switching to Fresh Feels." Lines up the old products. Laundry liquid, dishwasher pods, kitchen spray, floor cleaner. All replaced by sheets in one small box per category.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script</div>
+        <p>"I'm going to show you what I stopped buying. [lines up old products on bench] Laundry liquid, dishwasher pods, kitchen spray, floor cleaner. I switched to Fresh Feels about three months ago and haven't bought any of this since. Sheets for everything. Smaller, lighter, less plastic, and honestly they work better. Link in bio."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Creator in a real kitchen or laundry</li>
+            <li>Line up the old products clearly on the bench</li>
+            <li>Reveal the Fresh Feels equivalent next to or replacing each one</li>
+            <li>Calm, matter-of-fact delivery. Not performative.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>This is the full replacement story. Best for warmer audiences or retargeting.</li>
+            <li>Works well with longer creators who have genuine trust with their audience</li>
+            <li>Do not rush the reveal. Let each replacement land.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--blush)">See what it replaces. Link in bio.</div>
+      <div class="execution-note">Full system replacement story. Strong for mid to lower funnel. Drives bundle behaviour.</div>
+    </div>
+  </div>
+
+  <!-- AD 12 -->
+  <div class="ad-card" data-category="cross">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--blush)">12</div>
+      <div class="ad-title-block">
+        <div class="ad-title">The More You Buy</div>
+        <div class="ad-badges">
+          <span class="badge badge-brand-all">Cross-range</span>
+          <span class="badge badge-brand-prod">Brand-produced</span>
+          <span class="badge badge-carousel">Carousel 4 slides</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">Slide 1</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"The more you buy, the less each clean costs. That's just how it works."</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Buying cleaning products one at a time is the most expensive way to do it. Constant small purchases add up to more than people realise.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>Most brands push subscriptions or "save when you subscribe" pressure tactics that lock you in. There is a better way that keeps you in control.</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>Stock Up and Save. Buy 2 or more and save 20%. Buy 4 or more and save 30%. Buy 6 or more and save 40%. Mix anything across the range. No subscription. No lock-in. Just smarter buying.</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Slide Copy</div>
+        <p>Slide 1: "The more you buy, the less each clean costs." / Brand hero<br>Slide 2: "Buy 2+ items: save 20%. Buy 4+ items: save 30%. Buy 6+ items: save 40%." / Clean typography<br>Slide 3: "Mix anything across the range. No codes. No catch. Just better value." / Product flatlay<br>Slide 4: "No subscriptions. No lock-ins. You stay in control." / CTA</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Clean, typographic carousel. Brand colours.</li>
+            <li>Product flatlay showing the full range in slide 3</li>
+            <li>Bold, confident numbers. No small print energy.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>No urgency or pressure language. The value speaks for itself.</li>
+            <li>Avoid "SALE" framing. This is how the model works, not a promotion.</li>
+            <li>Works well as a retargeting ad for people who have visited the site</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--blush)">Load up. Save more. Link in bio.</div>
+      <div class="execution-note">Value education creative. Best for warm audiences. Drives AOV and bundle behaviour.</div>
+    </div>
+  </div>
+
+  <!-- AD 13 -->
+  <div class="ad-card" data-category="cross ugc">
+    <div class="ad-card-header">
+      <div class="ad-number" style="background:var(--blush)">13</div>
+      <div class="ad-title-block">
+        <div class="ad-title">Six Months Later</div>
+        <div class="ad-badges">
+          <span class="badge badge-brand-all">Cross-range</span>
+          <span class="badge badge-ugc">UGC</span>
+          <span class="badge badge-reel">Reel 30-45s</span>
+          <span class="badge badge-reel">IG + FB</span>
+        </div>
+      </div>
+    </div>
+    <div class="ad-card-body">
+      <div class="hook-callout">
+        <div class="hook-timer">0-3 sec</div>
+        <div class="hook-callout-label">Hook</div>
+        <div class="hook-callout-text">"Six months ago I made one change to how I clean my house. Here's what happened."</div>
+      </div>
+      <div class="pas-grid">
+        <div class="pas-block pas-block-p">
+          <div class="pas-label pas-label-p">P / Problem</div>
+          <p>Constantly spending money on cleaning products. Multiple bottles, always running out of something. The cycle never ends.</p>
+        </div>
+        <div class="pas-block pas-block-a">
+          <div class="pas-label pas-label-a">A / Agitate</div>
+          <p>"I had tried eco alternatives before and been disappointed. They just did not clean properly. So I had low expectations when someone told me to try these sheets."</p>
+        </div>
+        <div class="pas-block pas-block-s">
+          <div class="pas-label pas-label-s">S / Solve</div>
+          <p>"The laundry sheets actually work. The dishwasher sheets actually work. The multipurpose spray actually works. I've saved money, my cupboard is clear and I haven't bought a plastic bottle in six months."</p>
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-block-label">Suggested Script</div>
+        <p>"Six months ago I made one change to how I clean my house. I switched everything to Fresh Feels. I'd tried eco alternatives before and been let down so I wasn't expecting much. But the laundry sheets actually work. The dishwasher sheets actually work. The multipurpose spray actually works. [show each product] I've saved money, cleared out my cupboard and haven't bought a plastic bottle in six months. That's the whole review. Link in bio."</p>
+      </div>
+      <div class="two-col">
+        <div class="detail-block">
+          <div class="detail-block-label">Visual Direction</div>
+          <ul>
+            <li>Creator talking to camera, calm and genuine</li>
+            <li>Hold up each product as it's mentioned</li>
+            <li>Show the clear, organised cupboard at the end</li>
+            <li>Real home. Real person. Not aspirational.</li>
+          </ul>
+        </div>
+        <div class="detail-block">
+          <div class="detail-block-label">Execution Notes</div>
+          <ul>
+            <li>The time frame ("six months") gives this credibility. Not a first impression.</li>
+            <li>Works best with creators who feel trustworthy, not polished</li>
+            <li>The eco scepticism angle is important. It speaks directly to the audience who has been let down before.</li>
+            <li>Brief on the story arc, not the words. Let them own it.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row">
+      <div class="cta-pill" style="background:var(--blush)">That's the whole review. Link in bio.</div>
+      <div class="execution-note">Longer form trust-builder. Ideal for warmer audiences and retargeting. High potential evergreen.</div>
+    </div>
+  </div>
+
+</div><!-- end main -->
+
+<!-- FOOTER NOTE -->
+<div style="background:var(--darker); padding:40px; text-align:center;">
+  <p style="color:rgba(255,255,255,0.4); font-size:13px; max-width:600px; margin:0 auto; line-height:1.7;">
+    All concepts follow the Fresh Feels communication hierarchy: Performance leads, Value justifies, Convenience explains, Environment reassures. No em or en dashes. Write like a real person. If it sounds like marketing, rewrite it.
+  </p>
+</div>
+
+<script>
+function filter(category) {
+  const cards = document.querySelectorAll('.ad-card');
+  const buttons = document.querySelectorAll('.filter-btn');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  cards.forEach(card => {
+    if (category === 'all') {
+      card.classList.remove('hidden');
+    } else {
+      const cats = card.getAttribute('data-category') || '';
+      if (cats.includes(category)) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    }
+  });
+}
+</script>
+
+
+
+</body></html>
