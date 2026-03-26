@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://pas-framework-resource.netlify.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The PAS Playbook — Writing Ads That Stop, Hook &amp; Convert</title>
+    <script src="./The PAS Playbook — Writing Ads That Stop, Hook &amp; Convert_files/saved_resource"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="./The PAS Playbook — Writing Ads That Stop, Hook &amp; Convert_files/css2" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+
+        /* Hero gradient */
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 40%, #312e81 70%, #4338ca 100%);
+        }
+
+        /* Step circles */
+        .step-p { background: #ef4444; }
+        .step-a { background: #f97316; }
+        .step-s { background: #22c55e; }
+
+        /* Highlight bar */
+        .highlight-p { border-left: 4px solid #ef4444; background: #fff1f2; }
+        .highlight-a { border-left: 4px solid #f97316; background: #fff7ed; }
+        .highlight-s { border-left: 4px solid #22c55e; background: #f0fdf4; }
+
+        /* Real ad quote */
+        .ad-quote {
+            background: #0f172a;
+            border-radius: 12px;
+            position: relative;
+        }
+        .ad-quote::before {
+            content: '"';
+            position: absolute;
+            top: -8px;
+            left: 16px;
+            font-size: 4rem;
+            color: #4338ca;
+            line-height: 1;
+            font-weight: 900;
+        }
+
+        /* Template box */
+        .template-line {
+            background: white;
+            border: 1.5px dashed #cbd5e1;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font-size: 0.875rem;
+            color: #475569;
+        }
+        .template-line.filled {
+            border-style: solid;
+            border-color: #4338ca;
+            background: #eef2ff;
+            color: #1e1b4b;
+            font-weight: 500;
+        }
+
+        /* Pill tags */
+        .pill { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 99px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+        .pill-red { background: #fee2e2; color: #b91c1c; }
+        .pill-orange { background: #ffedd5; color: #c2410c; }
+        .pill-green { background: #dcfce7; color: #15803d; }
+        .pill-indigo { background: #e0e7ff; color: #3730a3; }
+
+        /* Section anchors */
+        .section-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #94a3b8; }
+
+        /* Sticky nav */
+        .sticky-nav a { transition: color 0.15s; }
+        .sticky-nav a:hover { color: #4338ca; }
+
+        /* Divider */
+        .gradient-divider {
+            height: 3px;
+            background: linear-gradient(90deg, #ef4444, #f97316, #22c55e);
+            border-radius: 99px;
+        }
+
+        /* Example card */
+        .example-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .example-card-header {
+            padding: 10px 16px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        /* Numbered list */
+        .step-number {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #4338ca;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* Scroll reveal */
+        .fade-in { animation: fadeIn 0.5s ease both; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Print */
+        @media print {
+            .no-print { display: none !important; }
+            .hero-bg { background: #0f172a !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f8fafc; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 99px; }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sticky{position:sticky}.top-0{top:0px}.z-50{z-index:50}.mx-0{margin-left:0px;margin-right:0px}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.w-10{width:2.5rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.max-w-4xl{max-width:56rem}.max-w-xl{max-width:36rem}.flex-shrink-0{flex-shrink:0}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-20 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-indigo-100{--tw-border-opacity:1;border-color:rgb(224 231 255 / var(--tw-border-opacity, 1))}.border-indigo-800{--tw-border-opacity:1;border-color:rgb(55 48 163 / var(--tw-border-opacity, 1))}.border-red-100{--tw-border-opacity:1;border-color:rgb(254 226 226 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-indigo-100{--tw-bg-opacity:1;background-color:rgb(224 231 255 / var(--tw-bg-opacity, 1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-indigo-950{--tw-bg-opacity:1;background-color:rgb(30 27 75 / var(--tw-bg-opacity, 1))}.bg-orange-50{--tw-bg-opacity:1;background-color:rgb(255 247 237 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-indigo-900{--tw-gradient-from:#312e81 var(--tw-gradient-from-position);--tw-gradient-to:rgb(49 46 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-950{--tw-gradient-from:#1e1b4b var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 27 75 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-red-400{--tw-gradient-from:#f87171 var(--tw-gradient-from-position);--tw-gradient-to:rgb(248 113 113 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-800{--tw-gradient-from:#1e293b var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 41 59 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-indigo-900{--tw-gradient-to:rgb(49 46 129 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #312e81 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-orange-400{--tw-gradient-to:rgb(251 146 60 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fb923c var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-green-400{--tw-gradient-to:#4ade80 var(--tw-gradient-to-position)}.to-indigo-700{--tw-gradient-to:#4338ca var(--tw-gradient-to-position)}.to-purple-900{--tw-gradient-to:#581c87 var(--tw-gradient-to-position)}.to-slate-700{--tw-gradient-to:#334155 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pt-10{padding-top:2.5rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-widest{letter-spacing:0.1em}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-green-700{--tw-text-opacity:1;color:rgb(21 128 61 / var(--tw-text-opacity, 1))}.text-green-800{--tw-text-opacity:1;color:rgb(22 101 52 / var(--tw-text-opacity, 1))}.text-indigo-200{--tw-text-opacity:1;color:rgb(199 210 254 / var(--tw-text-opacity, 1))}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252 / var(--tw-text-opacity, 1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-indigo-700{--tw-text-opacity:1;color:rgb(67 56 202 / var(--tw-text-opacity, 1))}.text-indigo-800{--tw-text-opacity:1;color:rgb(55 48 163 / var(--tw-text-opacity, 1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-orange-700{--tw-text-opacity:1;color:rgb(194 65 12 / var(--tw-text-opacity, 1))}.text-orange-800{--tw-text-opacity:1;color:rgb(154 52 18 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-red-800{--tw-text-opacity:1;color:rgb(153 27 27 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-80{opacity:0.8}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:px-10{padding-left:2.5rem;padding-right:2.5rem}.sm\:py-24{padding-top:6rem;padding-bottom:6rem}.sm\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+<!-- STICKY NAV -->
+<nav class="no-print sticky-nav sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100 px-6 py-3">
+    <div class="max-w-4xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-md bg-indigo-600 flex items-center justify-center">
+                <span class="text-white font-black text-xs">P</span>
+            </div>
+            <span class="font-semibold text-slate-800 text-sm">The PAS Playbook</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-6 text-sm text-slate-500 font-medium">
+            <a href="https://pas-framework-resource.netlify.app/#what-is-pas">What is PAS</a>
+            <a href="https://pas-framework-resource.netlify.app/#why-it-works">Why It Works</a>
+            <a href="https://pas-framework-resource.netlify.app/#in-action">In Action</a>
+            <a href="https://pas-framework-resource.netlify.app/#how-to-use">How to Use It</a>
+            <a href="https://pas-framework-resource.netlify.app/#template">Templates</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero-bg text-white">
+    <div class="max-w-4xl mx-auto px-6 sm:px-10 py-16 sm:py-24">
+        <p class="section-label text-indigo-300 mb-4">Ad Copywriting Framework</p>
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-none">
+            The<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-orange-400 to-green-400">PAS</span><br>
+            Playbook
+        </h1>
+        <p class="text-xl text-indigo-200 font-light max-w-xl leading-relaxed mb-8">
+            How to write ads that stop the scroll, create urgency, and turn strangers into buyers — using a 3-step framework that's been quietly powering some of the best-performing ads in our category.
+        </p>
+        <div class="flex flex-wrap gap-3">
+            <span class="pill pill-red">Problem</span>
+            <span class="text-slate-400 self-center">→</span>
+            <span class="pill pill-orange">Agitate</span>
+            <span class="text-slate-400 self-center">→</span>
+            <span class="pill pill-green">Solve</span>
+        </div>
+    </div>
+</div>
+
+<!-- GRADIENT DIVIDER -->
+<div class="gradient-divider mx-0"></div>
+
+<!-- MAIN CONTENT -->
+<div class="max-w-4xl mx-auto px-6 sm:px-10 py-12 space-y-20">
+
+    <!-- ── WHAT IS PAS ── -->
+    <section id="what-is-pas" class="fade-in">
+        <p class="section-label mb-3">Section 01</p>
+        <h2 class="text-3xl font-black text-slate-900 mb-2">What is PAS?</h2>
+        <p class="text-slate-500 text-lg font-light mb-8">The simplest, most battle-tested framework in advertising.</p>
+
+        <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-8 mb-8">
+            <p class="text-slate-700 leading-relaxed text-base mb-6">
+                PAS stands for <strong>Problem → Agitate → Solve</strong>. It's a three-part copywriting formula that works by meeting your audience where they already are — inside a frustration they're feeling — rather than trying to sell them something they haven't thought about yet.
+            </p>
+            <p class="text-slate-700 leading-relaxed text-base">
+                Instead of leading with your product and hoping someone cares, PAS starts with the customer's pain. It names a problem they recognise, intensifies why that problem matters, then presents your product as the logical, almost inevitable solution.
+            </p>
+        </div>
+
+        <!-- 3 blocks -->
+        <div class="grid sm:grid-cols-3 gap-4">
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+                <div class="example-card-header bg-red-50 text-red-700">
+                    <div class="flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full step-p text-white text-xs font-black flex items-center justify-center">P</span>
+                        Problem
+                    </div>
+                </div>
+                <div class="p-5">
+                    <p class="font-bold text-slate-800 text-sm mb-2">Identify the pain</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Name a real frustration your audience already feels. Be specific. The more accurately you describe their problem, the more they trust you understand them.</p>
+                    <div class="mt-4 highlight-p rounded-lg p-3">
+                        <p class="text-xs text-red-700 font-medium italic">"Most detergents are full of toxic chemicals and packaged in single-use plastic…"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+                <div class="example-card-header bg-orange-50 text-orange-700">
+                    <div class="flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full step-a text-white text-xs font-black flex items-center justify-center">A</span>
+                        Agitate
+                    </div>
+                </div>
+                <div class="p-5">
+                    <p class="font-bold text-slate-800 text-sm mb-2">Twist the knife</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Don't just describe the problem — make it feel urgent, costly, or embarrassing. Remind them what happens if they keep ignoring it. This is what creates the emotional itch that demands to be scratched.</p>
+                    <div class="mt-4 highlight-a rounded-lg p-3">
+                        <p class="text-xs text-orange-700 font-medium italic">"…and 90% of it is just tap water you're paying premium prices for."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+                <div class="example-card-header bg-green-50 text-green-700">
+                    <div class="flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full step-s text-white text-xs font-black flex items-center justify-center">S</span>
+                        Solve
+                    </div>
+                </div>
+                <div class="p-5">
+                    <p class="font-bold text-slate-800 text-sm mb-2">Be the answer</p>
+                    <p class="text-sm text-slate-600 leading-relaxed">Only after the reader feels the problem do you introduce your product. By now you're not interrupting them — you're rescuing them. The solution lands with relief rather than resistance.</p>
+                    <div class="mt-4 highlight-s rounded-lg p-3">
+                        <p class="text-xs text-green-700 font-medium italic">"We fixed that. Our sheets are plant-based, zero plastic, and cost half the price."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── WHY IT WORKS ── -->
+    <section id="why-it-works" class="fade-in">
+        <p class="section-label mb-3">Section 02</p>
+        <h2 class="text-3xl font-black text-slate-900 mb-2">Why It Works</h2>
+        <p class="text-slate-500 text-lg font-light mb-8">It's not magic — it's psychology.</p>
+
+        <div class="grid sm:grid-cols-2 gap-6 mb-8">
+
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+                <div class="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <p class="font-bold text-slate-800 mb-2">People move away from pain faster than toward pleasure</p>
+                <p class="text-sm text-slate-600 leading-relaxed">Behavioural psychology consistently shows that loss aversion is a stronger motivator than potential gain. PAS leads with loss — the pain of the status quo — which activates a more powerful emotional response than leading with a benefit ever could.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+                <div class="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </div>
+                <p class="font-bold text-slate-800 mb-2">It creates instant relevance</p>
+                <p class="text-sm text-slate-600 leading-relaxed">When a reader sees their exact problem described in your ad, they feel seen. That recognition creates an immediate connection — they stop scrolling because the ad feels like it was written for them, not broadcast at the world.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+                <div class="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <p class="font-bold text-slate-800 mb-2">The solution feels earned, not sold</p>
+                <p class="text-sm text-slate-600 leading-relaxed">Most ads feel like someone trying to sell you something. PAS feels like someone helping you out of a problem. By the time your product is introduced, the reader is actively looking for the answer — so your offer arrives as a gift, not a pitch.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
+                <div class="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                </div>
+                <p class="font-bold text-slate-800 mb-2">It works across every format</p>
+                <p class="text-sm text-slate-600 leading-relaxed">Video, static image, email, caption, spoken script — PAS is format-agnostic. Whether you have 6 seconds or 60, the three-beat structure scales. That's why it's the most durable framework in advertising.</p>
+            </div>
+        </div>
+
+        <!-- Pull quote -->
+        <div class="bg-indigo-950 rounded-2xl p-8 text-white">
+            <p class="text-indigo-300 text-xs font-bold uppercase tracking-widest mb-4">The key insight</p>
+            <p class="text-2xl font-bold leading-snug text-white">
+                "Your audience isn't waiting to hear about your product. They're absorbed in their own problems. PAS meets them there first — and earns the right to introduce a solution."
+            </p>
+        </div>
+    </section>
+
+    <!-- ── IN ACTION ── -->
+    <section id="in-action" class="fade-in">
+        <p class="section-label mb-3">Section 03</p>
+        <h2 class="text-3xl font-black text-slate-900 mb-2">PAS in Action</h2>
+        <p class="text-slate-500 text-lg font-light mb-8">Real ads from a competitor's library — and why they've kept running for months.</p>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl px-6 py-4 mb-8 flex gap-3">
+            <span class="text-amber-500 text-lg flex-shrink-0 mt-0.5">🔍</span>
+            <p class="text-sm text-amber-900 leading-relaxed"><strong>Context:</strong> The following examples are drawn from a real competitor audit of <strong>Lucent Globe</strong>, an eco-cleaning brand in the AU market. Their two longest-running ads (running 200–290 days continuously) both follow PAS almost to the letter. This isn't coincidence — it's proof of concept.</p>
+        </div>
+
+        <!-- Example 1 -->
+        <div class="example-card mb-6 bg-white">
+            <div class="example-card-header bg-slate-800 text-slate-300 flex items-center justify-between">
+                <span>Lucent Globe — Ad #1 &nbsp;·&nbsp; 290 days active</span>
+                <span class="pill pill-green">Evergreen</span>
+            </div>
+            <div class="p-6">
+                <div class="ad-quote p-6 pt-10 mb-6">
+                    <p class="text-white text-base leading-relaxed italic">"I have a confession... I LIED. I didn't think we could make our detergent sheets any cheaper, but we did. Most detergents are full of toxic chemicals ☣️ and packaged in plastic you'll never stop paying for. We fixed that — and now we've made them even more affordable."</p>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-3">
+                    <div class="highlight-p rounded-xl p-4">
+                        <p class="text-xs font-bold text-red-600 uppercase tracking-wide mb-1 flex items-center gap-1"><span class="w-4 h-4 rounded-full step-p text-white text-xs font-black flex items-center justify-center text-center leading-none">P</span> Problem</p>
+                        <p class="text-sm text-red-800">"Toxic chemicals and plastic packaging you can't escape"</p>
+                    </div>
+                    <div class="highlight-a rounded-xl p-4">
+                        <p class="text-xs font-bold text-orange-600 uppercase tracking-wide mb-1 flex items-center gap-1"><span class="w-4 h-4 rounded-full step-a text-white text-xs font-black flex items-center justify-center">A</span> Agitate</p>
+                        <p class="text-sm text-orange-800">"You'll never stop paying for it" — the cost is ongoing, not just once</p>
+                    </div>
+                    <div class="highlight-s rounded-xl p-4">
+                        <p class="text-xs font-bold text-green-600 uppercase tracking-wide mb-1 flex items-center gap-1"><span class="w-4 h-4 rounded-full step-s text-white text-xs font-black flex items-center justify-center">S</span> Solve</p>
+                        <p class="text-sm text-green-800">"We fixed that" — clean, confident, no over-explanation needed</p>
+                    </div>
+                </div>
+                <div class="mt-4 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                    <p class="text-xs font-semibold text-slate-600 mb-1">Why it held for 290 days:</p>
+                    <p class="text-sm text-slate-600">The confession hook ("I LIED") is a pattern interrupt that earns attention before the PAS framework even kicks in. Once you're watching, the problem is both environmental (chemicals) and financial (cost) — two pain points for the price of one. The solve is delivered with founder-level confidence, not feature lists.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Example 2 -->
+        <div class="example-card mb-6 bg-white">
+            <div class="example-card-header bg-slate-800 text-slate-300 flex items-center justify-between">
+                <span>Lucent Globe — Ad #2 &nbsp;·&nbsp; 201 days active</span>
+                <span class="pill pill-green">Evergreen</span>
+            </div>
+            <div class="p-6">
+                <div class="ad-quote p-6 pt-10 mb-6">
+                    <p class="text-white text-base leading-relaxed italic">"You'll be SHOCKED to learn what's actually in your dishwashing detergent… Most brands load it with forever chemicals and 70% water — and charge you full price for the privilege. Not over here 👋 We're giving away 50% OFF the EVERYTHING BUNDLE."</p>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-3">
+                    <div class="highlight-p rounded-xl p-4">
+                        <p class="text-xs font-bold text-red-600 uppercase tracking-wide mb-1 flex items-center gap-1"><span class="w-4 h-4 rounded-full step-p text-white text-xs font-black flex items-center justify-center">P</span> Problem</p>
+                        <p class="text-sm text-red-800">"Hidden chemicals and water — your detergent is not what you think"</p>
+                    </div>
+                    <div class="highlight-a rounded-xl p-4">
+                        <p class="text-xs font-bold text-orange-600 uppercase tracking-wide mb-1 flex items-center gap-1"><span class="w-4 h-4 rounded-full step-a text-white text-xs font-black flex items-center justify-center">A</span> Agitate</p>
+                        <p class="text-sm text-orange-800">"Charged full price for the privilege" — the industry is exploiting you</p>
+                    </div>
+                    <div class="highlight-s rounded-xl p-4">
+                        <p class="text-xs font-bold text-green-600 uppercase tracking-wide mb-1 flex items-center gap-1"><span class="w-4 h-4 rounded-full step-s text-white text-xs font-black flex items-center justify-center">S</span> Solve</p>
+                        <p class="text-sm text-green-800">"Not over here 👋" — positions the brand as the exception, plus immediate offer</p>
+                    </div>
+                </div>
+                <div class="mt-4 bg-slate-50 rounded-xl p-4 border border-slate-100">
+                    <p class="text-xs font-semibold text-slate-600 mb-1">Why it held for 201 days:</p>
+                    <p class="text-sm text-slate-600">"SHOCKED" creates an information gap — a curiosity the viewer needs to close. The agitation reframes the problem as an active betrayal ("you're being taken advantage of"), not just inconvenience. This elevates the emotional stakes before the solve, making the offer feel like justice not just savings.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-sm text-slate-500 italic text-center">These aren't lucky ads — they're a repeatable system. The same structure, applied consistently, across their entire library.</p>
+    </section>
+
+    <!-- ── HOW TO USE IT ── -->
+    <section id="how-to-use" class="fade-in">
+        <p class="section-label mb-3">Section 04</p>
+        <h2 class="text-3xl font-black text-slate-900 mb-2">How to Use It</h2>
+        <p class="text-slate-500 text-lg font-light mb-8">A step-by-step process for turning a blank page into a brief-ready concept.</p>
+
+        <div class="space-y-4 mb-10">
+
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex gap-5">
+                <div class="step-number flex-shrink-0">1</div>
+                <div>
+                    <p class="font-bold text-slate-800 mb-1">Start with the problem — not your product</p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-3">Resist the urge to open with what your product does. Instead, ask: what is the customer frustrated about right now, before they've ever heard of you? Write that down in plain language, as if you're venting on their behalf.</p>
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                        <p class="text-xs font-semibold text-slate-500 mb-2">QUESTIONS TO ASK:</p>
+                        <ul class="text-sm text-slate-600 space-y-1">
+                            <li class="flex gap-2"><span class="text-indigo-400 flex-shrink-0">→</span>What do people complain about in this category on Reddit, reviews, or socials?</li>
+                            <li class="flex gap-2"><span class="text-indigo-400 flex-shrink-0">→</span>What do they waste money on without realising it?</li>
+                            <li class="flex gap-2"><span class="text-indigo-400 flex-shrink-0">→</span>What do they put up with because they didn't know there was a better way?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex gap-5">
+                <div class="step-number flex-shrink-0">2</div>
+                <div>
+                    <p class="font-bold text-slate-800 mb-1">Make the problem feel urgent or costly</p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-3">This is the step most people skip — and it's the most important one. Don't just describe the problem; describe the consequence of leaving it unsolved. What is it costing them in money, time, health, or self-image?</p>
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                        <p class="text-xs font-semibold text-slate-500 mb-2">AGITATION TECHNIQUES:</p>
+                        <ul class="text-sm text-slate-600 space-y-1">
+                            <li class="flex gap-2"><span class="text-orange-400 flex-shrink-0">→</span><strong>Quantify the pain:</strong> "90% of it is just water you're paying $12 for"</li>
+                            <li class="flex gap-2"><span class="text-orange-400 flex-shrink-0">→</span><strong>Name the villain:</strong> "Most brands know this and charge you anyway"</li>
+                            <li class="flex gap-2"><span class="text-orange-400 flex-shrink-0">→</span><strong>Project into the future:</strong> "And without changing anything, you'll keep paying for it forever"</li>
+                            <li class="flex gap-2"><span class="text-orange-400 flex-shrink-0">→</span><strong>Make it personal:</strong> "You've probably already paid hundreds without realising it"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex gap-5">
+                <div class="step-number flex-shrink-0">3</div>
+                <div>
+                    <p class="font-bold text-slate-800 mb-1">Introduce the solution with confidence, not desperation</p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-3">Your solve should feel like relief, not a sales pitch. Keep it short. Don't list every feature. Focus on the single outcome that directly addresses the problem you named — then, optionally, layer in your offer.</p>
+                    <div class="bg-slate-50 rounded-xl p-4 border border-slate-100">
+                        <p class="text-xs font-semibold text-slate-500 mb-2">SOLVE PATTERNS THAT WORK:</p>
+                        <ul class="text-sm text-slate-600 space-y-1">
+                            <li class="flex gap-2"><span class="text-green-500 flex-shrink-0">→</span><strong>The pivot:</strong> "Not us." / "Not anymore." / "Not over here."</li>
+                            <li class="flex gap-2"><span class="text-green-500 flex-shrink-0">→</span><strong>The simple fix:</strong> "We fixed that." / "There's a better way."</li>
+                            <li class="flex gap-2"><span class="text-green-500 flex-shrink-0">→</span><strong>The contrast:</strong> "While everyone else does X, we do Y."</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex gap-5">
+                <div class="step-number flex-shrink-0">4</div>
+                <div>
+                    <p class="font-bold text-slate-800 mb-1">Add a hook before the P</p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-3">In video especially, you need to earn 3 seconds before the PAS framework even has a chance to land. A great hook interrupts the pattern of mindless scrolling and forces attention. Think of it as the doorbell — PAS is what's inside.</p>
+                    <div class="grid sm:grid-cols-2 gap-3 mt-2">
+                        <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-4">
+                            <p class="text-xs font-bold text-indigo-600 mb-2 uppercase tracking-wide">Hook types that work</p>
+                            <ul class="text-sm text-indigo-800 space-y-1">
+                                <li>🎭 Confession: "I LIED about this…"</li>
+                                <li>😱 Shock: "You'll be SHOCKED by…"</li>
+                                <li>❓ Question: "Did you know your X is…?"</li>
+                                <li>🔢 Stat: "90% of X is just water…"</li>
+                                <li>🔄 Pattern break: "WORST review we ever got…"</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                            <p class="text-xs font-bold text-slate-500 mb-2 uppercase tracking-wide">The 3-second rule</p>
+                            <p class="text-sm text-slate-600">If someone watching your video could scroll past in the first 3 seconds and miss nothing important, your hook isn't working. The hook must either promise something, reveal something, or create an information gap that demands to be filled.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── TEMPLATE ── -->
+    <section id="template" class="fade-in">
+        <p class="section-label mb-3">Section 05</p>
+        <h2 class="text-3xl font-black text-slate-900 mb-2">Templates</h2>
+        <p class="text-slate-500 text-lg font-light mb-8">Fill these in for any product, category, or campaign.</p>
+
+        <!-- Master template -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+            <div class="px-6 py-4 bg-gradient-to-r from-indigo-900 to-indigo-700 text-white">
+                <p class="font-bold text-sm">The Master PAS Script Template</p>
+                <p class="text-indigo-300 text-xs mt-0.5">Use this as a starting point for any video, caption, or ad script</p>
+            </div>
+            <div class="p-6 space-y-4">
+
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-2 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-700 text-xs font-black flex items-center justify-center">0</span> Hook (first 3 seconds)</p>
+                    <div class="template-line">[Confession / Shock / Question / Pattern-interrupt that makes someone stop]</div>
+                </div>
+
+                <div>
+                    <p class="text-xs font-bold text-red-400 uppercase tracking-wide mb-2 flex items-center gap-2"><span class="w-5 h-5 rounded-full step-p text-white text-xs font-black flex items-center justify-center">P</span> Problem</p>
+                    <div class="template-line">Most [product category / brands] [specific failing — cost, chemicals, inefficiency, waste…]</div>
+                    <div class="template-line mt-2">❌ [Specific problem 1]</div>
+                    <div class="template-line mt-2">❌ [Specific problem 2]</div>
+                    <div class="template-line mt-2">❌ [Specific problem 3]</div>
+                </div>
+
+                <div>
+                    <p class="text-xs font-bold text-orange-400 uppercase tracking-wide mb-2 flex items-center gap-2"><span class="w-5 h-5 rounded-full step-a text-white text-xs font-black flex items-center justify-center">A</span> Agitate</p>
+                    <div class="template-line">And [quantify the cost / name the consequence / make it feel personal or ongoing]</div>
+                </div>
+
+                <div>
+                    <p class="text-xs font-bold text-green-500 uppercase tracking-wide mb-2 flex items-center gap-2"><span class="w-5 h-5 rounded-full step-s text-white text-xs font-black flex items-center justify-center">S</span> Solve</p>
+                    <div class="template-line">Not [us / here / anymore]. [Brand name] [does the opposite — one clear outcome statement]</div>
+                    <div class="template-line mt-2">✅ [Benefit 1 — directly mirrors Problem 1]</div>
+                    <div class="template-line mt-2">✅ [Benefit 2 — directly mirrors Problem 2]</div>
+                </div>
+
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-2 flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-slate-200 text-slate-600 text-xs font-black flex items-center justify-center">+</span> Offer / CTA (optional)</p>
+                    <div class="template-line">[Right now / For a limited time] — [specific offer]. [CTA: Shop / Try / Get yours]</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Worked example -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+            <div class="px-6 py-4 bg-gradient-to-r from-slate-800 to-slate-700 text-white">
+                <p class="font-bold text-sm">Worked Example — Generic Eco Cleaning Brand</p>
+                <p class="text-slate-400 text-xs mt-0.5">The template above, filled in</p>
+            </div>
+            <div class="p-6 space-y-4">
+
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-2">Hook</p>
+                    <div class="template-line filled">"You'll be SHOCKED by what's actually in your laundry detergent…"</div>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-red-400 uppercase tracking-wide mb-2">Problem</p>
+                    <div class="template-line filled">Most laundry detergents...</div>
+                    <div class="template-line filled mt-2">❌ Are up to 90% water — you're paying for packaging, not product</div>
+                    <div class="template-line filled mt-2">❌ Contain synthetic chemicals linked to skin irritation</div>
+                    <div class="template-line filled mt-2">❌ Come in plastic that goes straight to landfill</div>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-orange-400 uppercase tracking-wide mb-2">Agitate</p>
+                    <div class="template-line filled">And they've been getting away with it for decades — charging premium prices for a product that's mostly filler.</div>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-green-500 uppercase tracking-wide mb-2">Solve</p>
+                    <div class="template-line filled">Not us. Our detergent sheets are 100% concentrated, plastic-free, and free from harsh chemicals.</div>
+                    <div class="template-line filled mt-2">✅ No water. No filler. No waste.</div>
+                    <div class="template-line filled mt-2">✅ Just a powerful, plant-based clean.</div>
+                </div>
+                <div>
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-wide mb-2">CTA</p>
+                    <div class="template-line filled">Try your first pack for $15 — free shipping on your first order. Shop now.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Common mistakes -->
+        <div class="bg-red-50 border border-red-100 rounded-2xl p-6 mb-8">
+            <p class="font-bold text-red-800 mb-4 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                Common Mistakes to Avoid
+            </p>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                    <p class="text-sm font-semibold text-red-700 mb-1">Skipping the Agitate step</p>
+                    <p class="text-sm text-red-700 opacity-80">Going straight from Problem to Solve without making the problem feel urgent produces weak ads. The Agitate step is what creates emotional tension — without it, the solve lands flat.</p>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-red-700 mb-1">Leading with your solution</p>
+                    <p class="text-sm text-red-700 opacity-80">"Our product is made with natural ingredients and no plastic…" sounds like every other brand. If someone doesn't already care about the problem, they won't care about your solution. Lead with pain first.</p>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-red-700 mb-1">Being vague about the problem</p>
+                    <p class="text-sm text-red-700 opacity-80">"Traditional cleaning products have issues" — nobody feels that. "Your detergent is 90% water and you're paying $12 for it" — everyone feels that. Specificity is what creates the "that's exactly me" moment.</p>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-red-700 mb-1">Over-explaining the solution</p>
+                    <p class="text-sm text-red-700 opacity-80">Once the problem is felt, the viewer wants relief — not a product brochure. Keep the Solve tight: one outcome, one promise. If they want details, they'll click through.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick ref card -->
+        <div class="bg-gradient-to-br from-indigo-950 via-indigo-900 to-purple-900 rounded-2xl p-8 text-white">
+            <p class="text-indigo-300 text-xs font-bold uppercase tracking-widest mb-4">Quick Reference — Bookmark This</p>
+            <div class="grid sm:grid-cols-3 gap-6">
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="w-8 h-8 rounded-full step-p text-white font-black text-sm flex items-center justify-center">P</span>
+                        <p class="font-bold text-white">Problem</p>
+                    </div>
+                    <p class="text-indigo-300 text-sm leading-relaxed">Name the specific frustration your audience already feels. Be precise. The more they think "that's exactly me," the better.</p>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="w-8 h-8 rounded-full step-a text-white font-black text-sm flex items-center justify-center">A</span>
+                        <p class="font-bold text-white">Agitate</p>
+                    </div>
+                    <p class="text-indigo-300 text-sm leading-relaxed">Quantify the cost. Name the villain. Make it feel ongoing and personal. This is what converts mild annoyance into urgent action.</p>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="w-8 h-8 rounded-full step-s text-white font-black text-sm flex items-center justify-center">S</span>
+                        <p class="font-bold text-white">Solve</p>
+                    </div>
+                    <p class="text-indigo-300 text-sm leading-relaxed">Pivot cleanly. One outcome. Lead with relief, not features. The offer (if any) comes here — earned, not forced.</p>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-indigo-800">
+                <p class="text-indigo-300 text-xs">The best hook + PAS combination in their category right now:<br>
+                <span class="text-white font-medium">"[Curiosity/Shock hook] → [Category's biggest sin] → [Why it keeps costing you] → [We did the opposite]"</span></p>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="border-t border-slate-200 mt-12 py-8 text-center">
+    <p class="text-xs text-slate-400">The PAS Playbook · Internal Resource · Based on live competitor intelligence from Meta Ad Library, March 2026</p>
+    <p class="text-xs text-slate-400 mt-1">Framework credit: PAS (Problem-Agitate-Solve) — Eugene Schwartz, Gary Halbert, Dan Kennedy</p>
+</footer>
+
+<script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            const el = document.querySelector(a.getAttribute('href'));
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+</script>
+
+
+
+<div id="thunderbit-crx-side-bar" style="display:block;opacity:1;pointer-events:all;top:0;right:0;z-index:9007199254740991;position:fixed;pointer-events:none;user-select:none;"><template shadowrootmode="open"><div id="#react-app-root"><div id="#react-app-slot" style="display:flex"></div></div></template></div><button id="open-side-panel" style="width:0;height:0;opacity:0;user-select:none;pointer-events:all;position:absolute;bottom:0;right:0;padding:0;border:0;outline:none;"></button></body></html>
