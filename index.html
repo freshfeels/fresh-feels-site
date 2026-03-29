@@ -6,9 +6,8 @@
   <title>Fresh Feels | Resource Hub</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
     :root {
-      --coral: #f26b72;h
+      --coral: #f26b72;
       --coral-light: #fde8e9;
       --coral-dark: #d4555c;
       --text-primary: #1a1a1a;
@@ -20,108 +19,51 @@
       --border: #e5e7eb;
       --border-light: #f3f4f6;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: var(--bg-light);
-      color: var(--text-primary);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-light); color: var(--text-primary); line-height: 1.6; -webkit-font-smoothing: antialiased; }
     .header { background: var(--bg-white); border-bottom: 1px solid var(--border); padding: 0; }
     .header-inner { max-width: 1100px; margin: 0 auto; padding: 32px 32px 0; }
-
     .brand-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; }
     .brand-logo { height: 40px; width: auto; }
     .brand-tag { font-size: 0.78rem; color: var(--text-light); font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
-
     .hero { padding: 24px 0 48px; }
     .hero h1 { font-size: 2.6rem; font-weight: 800; line-height: 1.15; color: var(--text-primary); letter-spacing: -0.03em; max-width: 600px; margin-bottom: 16px; }
     .hero p { font-size: 1.05rem; color: var(--text-secondary); max-width: 520px; line-height: 1.7; font-weight: 400; }
     .accent-line { width: 48px; height: 3px; background: var(--coral); border-radius: 2px; margin-bottom: 24px; }
-
     .nav-tabs { display: flex; gap: 0; border-bottom: none; margin: 0 -32px; padding: 0 32px; }
     .nav-tab { padding: 14px 24px; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); text-decoration: none; border-bottom: 2px solid transparent; transition: all 0.2s ease; cursor: pointer; }
     .nav-tab:hover { color: var(--text-primary); }
     .nav-tab.active { color: var(--coral); border-bottom-color: var(--coral); }
-
     .main { max-width: 1100px; margin: 0 auto; padding: 48px 32px 80px; }
     .section { margin-bottom: 56px; }
-
     .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
     .section-icon { width: 40px; height: 40px; background: var(--coral-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .section-icon svg { width: 20px; height: 20px; color: var(--coral); }
     .section-title { font-size: 1.15rem; font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em; }
     .section-subtitle { font-size: 0.82rem; color: var(--text-light); font-weight: 400; margin-top: 2px; }
-
     .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
-
-    .card {
-      background: var(--bg-white);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px;
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.25s ease;
-      position: relative;
-      overflow: hidden;
-    }
+    .card { background: var(--bg-white); border: 1px solid var(--border); border-radius: 12px; padding: 28px; text-decoration: none; color: inherit; transition: all 0.25s ease; position: relative; overflow: hidden; }
     .card:hover { border-color: var(--coral); box-shadow: 0 4px 24px rgba(242, 107, 114, 0.1); transform: translateY(-2px); }
     .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--coral); opacity: 0; transition: opacity 0.25s ease; }
     .card:hover::before { opacity: 1; }
-
     .card-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--coral); background: var(--coral-light); padding: 4px 10px; border-radius: 6px; margin-bottom: 16px; }
     .card h3 { font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; letter-spacing: -0.01em; line-height: 1.35; }
     .card p { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; }
-
     .card-meta { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; border-top: 1px solid var(--border-light); }
     .card-date { font-size: 0.75rem; color: var(--text-light); font-weight: 500; }
     .card-arrow { width: 28px; height: 28px; background: var(--bg-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; }
     .card:hover .card-arrow { background: var(--coral); }
     .card-arrow svg { width: 14px; height: 14px; color: var(--text-secondary); transition: color 0.2s ease; }
     .card:hover .card-arrow svg { color: white; }
-
-    /* How to publish strip */
-    .howto-strip {
-      background: var(--bg-white);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px 28px;
-      margin-bottom: 40px;
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-    }
-    .howto-icon {
-      width: 36px; height: 36px;
-      background: var(--coral-light);
-      border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-top: 2px;
-    }
-    .howto-icon svg { width: 18px; height: 18px; color: var(--coral); }
-    .howto-content summary {
-      font-size: 0.88rem; font-weight: 600; color: var(--text-primary);
-      cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px;
-    }
-    .howto-content summary::-webkit-details-marker { display: none; }
-    .howto-content summary::after { content: '▸'; font-size: 0.7rem; color: var(--text-light); transition: transform 0.2s; }
-    .howto-content[open] summary::after { transform: rotate(90deg); }
-    .howto-steps { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
-    .howto-step { display: flex; align-items: flex-start; gap: 10px; font-size: 0.83rem; color: var(--text-secondary); }
-    .step-num { width: 20px; height: 20px; background: var(--coral-light); color: var(--coral); border-radius: 50%; font-size: 0.68rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
-    .howto-step code { background: var(--bg-light); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; font-size: 0.78rem; color: var(--text-primary); font-family: 'Courier New', monospace; }
-
+    .access-notice { background: var(--bg-white); border: 1px solid var(--border); border-left: 3px solid var(--coral); border-radius: 8px; padding: 14px 18px; margin-top: 16px; display: flex; align-items: flex-start; gap: 10px; }
+    .access-notice svg { width: 16px; height: 16px; color: var(--coral); flex-shrink: 0; margin-top: 2px; }
+    .access-notice p { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; }
+    .access-notice p strong { color: var(--text-primary); font-weight: 600; }
     .footer { max-width: 1100px; margin: 0 auto; padding: 32px; border-top: 1px solid var(--border); }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
     .footer-text { font-size: 0.78rem; color: var(--text-light); }
     .footer-link { font-size: 0.78rem; color: var(--coral); text-decoration: none; font-weight: 500; }
     .footer-link:hover { text-decoration: underline; }
-
     @media (max-width: 768px) {
       .header-inner { padding: 24px 20px 0; }
       .hero h1 { font-size: 1.8rem; }
@@ -132,7 +74,6 @@
       .card-grid { grid-template-columns: 1fr; }
       .footer { padding: 24px 20px; }
       .brand-tag { display: none; }
-      .howto-strip { flex-direction: column; }
     }
   </style>
 </head>
@@ -179,9 +120,7 @@
         <p>Full competitive analysis of Lucent Globe's Meta advertising strategy. Creative breakdown, hooks, copy patterns and strategic takeaways.</p>
         <div class="card-meta">
           <span class="card-date">March 2026</span>
-          <span class="card-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </span>
+          <span class="card-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
         </div>
       </a>
     </div>
@@ -205,9 +144,7 @@
         <p>Problem-Agitation-Solution framework tailored for Fresh Feels. The strategic foundation behind all ad creative development.</p>
         <div class="card-meta">
           <span class="card-date">March 2026</span>
-          <span class="card-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </span>
+          <span class="card-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
         </div>
       </a>
     </div>
@@ -231,9 +168,7 @@
         <p>13 ready-to-produce ad concepts across Laundry, Dishwasher, Multipurpose and Cross-range. Complete with hooks, scripts, visual direction and CTAs.</p>
         <div class="card-meta">
           <span class="card-date">March 2026</span>
-          <span class="card-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </span>
+          <span class="card-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
         </div>
       </a>
     </div>
@@ -257,9 +192,7 @@
         <p>Commercial analysis comparing Fresh Start Bundle pricing scenarios. Full break-even, margin and positioning rationale for the $66.25 vs $79.90 decision.</p>
         <div class="card-meta">
           <span class="card-date">March 2026</span>
-          <span class="card-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </span>
+          <span class="card-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
         </div>
       </a>
       <a href="finance/fresh_feels_reference_guide.html" class="card" target="_blank" rel="noopener">
@@ -268,29 +201,14 @@
         <p>Full reference for the Ops Sheet v5 and Commercial Engine v8 — tab logic, data imports, manual inputs, scripts, and maintenance schedule.</p>
         <div class="card-meta">
           <span class="card-date">March 2026</span>
-          <span class="card-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </span>
+          <span class="card-arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></span>
         </div>
       </a>
     </div>
-  </div>
-
-  <!-- HOW TO PUBLISH -->
-  <div class="howto-strip">
-    <div class="howto-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.338-2.32 5.75 5.75 0 011.023 11.095"/></svg>
+    <div class="access-notice">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
+      <p><strong>Access required.</strong> Finance documents are password protected. If you need access, please contact the <strong>Fresh Feels Resource Hub Administrator</strong>.</p>
     </div>
-    <details class="howto-content">
-      <summary>How to publish a new resource</summary>
-      <div class="howto-steps">
-        <div class="howto-step"><span class="step-num">1</span><span>Ask Claude to build the HTML file — it will save it to your Finance folder ready to upload.</span></div>
-        <div class="howto-step"><span class="step-num">2</span><span>Go to <code>github.com/freshfeels/fresh-feels-site</code> and navigate to (or create) the correct folder — e.g. <code>finance/</code>, <code>audits/</code>.</span></div>
-        <div class="howto-step"><span class="step-num">3</span><span>Click <code>Add file → Upload files</code>, drag in your HTML file, add a short commit message, and click <code>Commit changes</code>.</span></div>
-        <div class="howto-step"><span class="step-num">4</span><span>Upload the new <code>index.html</code> (from your Finance folder) to the repo root the same way.</span></div>
-        <div class="howto-step"><span class="step-num">5</span><span>GitHub Pages deploys automatically — your file is live at <code>share.freshfeels.com.au</code> within ~30 seconds.</span></div>
-      </div>
-    </details>
   </div>
 
 </main>
